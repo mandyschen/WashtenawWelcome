@@ -32,8 +32,8 @@ class Header extends HTMLElement {
             <div id="myDropdown" class="dropdown-content">
               <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
               <a href="#about">English</a>
-              <a href="#base">Espanol</a>
-              <a href="#blog">Zhong Wen</a>
+              <a href="#base">Español</a>
+              <a href="#blog">中文</a>
             </div>
           </div>
           <li style="float:right"><a class="active" href="resources.html">Resources</a></li>

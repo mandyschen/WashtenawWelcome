@@ -6,20 +6,29 @@
   h1 {
     color: black;
     text-align: center;
-    font-size: 100px;
-    margin-top: 50px;
+    font-size: 7vw;
+    margin-top: 5%;
   }
 
   h3 {
     color:black;
     padding-bottom: 10%;
-    font-size: 5vw;
+    font-size: 4vw;
   }
   
   p {
     color:black;
-    font-size: 3vw;
+    font-size: 2vw;
     text-align: center;
+  }
+
+  p3 {
+    color:black;
+    font-size: 1vw;
+    text-align: center;
+    padding: 10%;
+    display:block;
+    text-align: left;
   }
 
   /* footer */
