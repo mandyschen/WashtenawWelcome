@@ -22,3 +22,4 @@ Currently, the website is in progress. However, we plan to add several features 
 * API implementation for job and news pages
 * Translations into various languages
 * More streamlined UI/UX design
+* Imbed a video on how to navigate the site
