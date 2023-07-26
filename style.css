@@ -1,5 +1,5 @@
   body {
-    background-color: lightblue;
+    background-color: lightgray;
     height: 100%;
   }
   
@@ -12,7 +12,7 @@
 
   h3 {
     color:black;
-    padding-bottom: 10%;
+    padding: 5%;
     font-size: 4vw;
   }
   
@@ -175,4 +175,22 @@
 
 .closebtn:hover {
   color: black;
+}
+
+
+/* Container holding the image and the text */
+.container {
+  width:100%;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Centered text */
+.centered {
+  font-size: 10vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
