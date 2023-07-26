@@ -22,5 +22,6 @@ We used various technologies in order to implement this website.
 Currently, the website is in progress. However, we plan to add several features that expand on both accessibility and ease of use. This includes:
 * API implementation for job and news pages
 * Translations into various languages
+* Audio options and more descriptive alt text
 * More streamlined UI/UX design
-* Imbed a video on how to navigate the site
+* Include a video tutorial on how to navigate the site
