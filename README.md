@@ -5,7 +5,7 @@ Link to website: https://mandyschen.github.io/WashtenawWelcome/
 
 ## General Info
 ***
-Status: #IN PROGRESS#  
+Status: ##IN PROGRESS##  
 This website was created by a team at the University of Michigan's Tech for Social Good. It was designed with the goal of accessibility in mind. 
 
 ## Technologies
