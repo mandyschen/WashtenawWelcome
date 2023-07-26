@@ -3,12 +3,6 @@
 A website designed to serve as a central information hub for immigrants to Washtenaw County. Includes news sources, job search help, community resources, and more.
 Link to website: https://mandyschen.github.io/WashtenawWelcome/
 
-## Table of Contents
-***
-1. [General Info] (#general-info)
-2. [Technologies] (#technologies)
-3. [Next Steps] (#next-steps)
-
 ## General Info
 ***
 Status: IN PROGRESS
