@@ -10,6 +10,7 @@ This website was created by a team at the University of Michigan's Tech for Soci
 
 ## Technologies
 ***
+We used various technologies in order to implement this website.
 * HTML
 * CSS
 * JavaScript
