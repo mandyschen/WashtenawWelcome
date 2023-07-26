@@ -27,15 +27,6 @@ class Header extends HTMLElement {
       
       <ul>
           <button class="btn" onclick = "window.location.href='index.html'"><i class="fa fa-home"></i></button>
-          <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Translate</button>
-            <div id="myDropdown" class="dropdown-content">
-              <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-              <a href="#about">English</a>
-              <a href="#base">Español</a>
-              <a href="#blog">中文</a>
-            </div>
-          </div>
           <li style="float:right"><a class="active" href="resources.html">Resources</a></li>
           <li style="float:right"><a class="active" href="connect.html">Connect</a></li>
           <li style="float:right"><a class="active" href="jobs.html">Jobs</a></li>
@@ -45,6 +36,36 @@ class Header extends HTMLElement {
     `;
     }
   }
+
+  // drop down menu for when translation is added
+
+  // class Header extends HTMLElement {
+  //   constructor() {
+  //     super();
+  //   }
+  //   connectedCallback() {
+  //     this.innerHTML = `
+      
+  //     <ul>
+  //         <button class="btn" onclick = "window.location.href='index.html'"><i class="fa fa-home"></i></button>
+  //         <div class="dropdown">
+  //           <button onclick="myFunction()" class="dropbtn">Translate</button>
+  //           <div id="myDropdown" class="dropdown-content">
+  //             <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+  //             <a href="#about">English</a>
+  //             <a href="#base">Español</a>
+  //             <a href="#blog">中文</a>
+  //           </div>
+  //         </div>
+  //         <li style="float:right"><a class="active" href="resources.html">Resources</a></li>
+  //         <li style="float:right"><a class="active" href="connect.html">Connect</a></li>
+  //         <li style="float:right"><a class="active" href="jobs.html">Jobs</a></li>
+  //         <li style="float:right"><a class="active" href="news.html">News</a></li>
+  //         <li style="float:right"><a class="active" href="about.html">About</a></li>
+  //     </ul>
+  //   `;
+  //   }
+  // }
 
   customElements.define('header-component', Header);
 
