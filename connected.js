@@ -49,6 +49,10 @@ class Header extends HTMLElement {
   customElements.define('header-component', Header);
 
 
+
+
+
+
   class Footer extends HTMLElement {
     constructor() {
       super();
@@ -57,7 +61,22 @@ class Header extends HTMLElement {
       this.innerHTML = `
       <footer>
         Created by: University of Michigan Tech 4 Social Good
-        <button style='float:right'>Contact Us</button>
+        <button id="contactButton" style="float:right">
+          Contact Us
+        </button>
+      <div id="myPopup" class="popup">
+        <div class="popup-content">
+          <h3 style="text-align:center">
+            Contact Us
+          </h3>
+          <p>Email: mandyche@umich.edu</p>
+          <button id="closePopup">
+            Close
+          </button>
+        </div>
+      </div>
+
+     
       </footer>
     `;
     }
@@ -65,3 +84,14 @@ class Header extends HTMLElement {
 
   customElements.define('footer-component', Footer);
 
+  contactButton.addEventListener("click", function () {
+    myPopup.classList.add("show");
+});
+closePopup.addEventListener("click", function () {
+    myPopup.classList.remove("show");
+});
+window.addEventListener("click", function (event) {
+    if (event.target == myPopup) {
+        myPopup.classList.remove("show");
+    }
+});
