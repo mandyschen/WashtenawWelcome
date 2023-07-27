@@ -25,4 +25,4 @@ Currently, the website is in progress. However, we plan to add several features 
 * Translations into various languages
 * Audio options and more descriptive alt text
 * More streamlined UI/UX design
-* Include a video tutorial on how to navigate the site
+* Video tutorial on how to navigate the site
