@@ -24,19 +24,24 @@ class Header extends HTMLElement {
     }
     connectedCallback() {
       this.innerHTML = `
-      
       <ul>
-          <button class="btn" onclick = "window.location.href='index.html'"><i class="fa fa-home"></i></button>
-          <li style="float:right"><a class="active" href="resources.html">Resources</a></li>
-          <li style="float:right"><a class="active" href="connect.html">Connect</a></li>
-          <li style="float:right"><a class="active" href="jobs.html">Jobs</a></li>
-          <li style="float:right"><a class="active" href="news.html">News</a></li>
-          <li style="float:right"><a class="active" href="about.html">About</a></li>
+        <button class="btn" onclick="window.location.href='index.html'"><i class="fa fa-home"></i></button>
+        <li style="float:right"><a class="active" href="resources.html">Resources</a></li>
+        <li style="float:right"><a class="active" href="connect.html">Connect</a></li>
+        <li style="float:right"><a class="active" href="jobs.html">Jobs</a></li>
+        <li style="float:right"><a class="active" href="news.html">News</a></li>
+        <li style="float:right"><a class="active" href="about.html">About</a></li>
       </ul>
     `;
     }
   }
 
+// var images = ["./images/index/michigannews.jpeg"];
+
+// images.forEach(function (imgSrc) {
+//   var img = new Image();
+//   img.src = imgSrc;
+// });
   // drop down menu for when translation is added
 
   // class Header extends HTMLElement {
