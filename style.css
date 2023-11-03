@@ -1,20 +1,20 @@
   
   body {
-    background-color: #e9e9eb;
+    background-color: whitesmoke;
     height: 100%;
   }
   
   h1 {
     color: black;
     text-align: center;
-    font-size: 7vw;
+    font-size: 5em;
     margin-top: 5%;
   }
 
   h3 {
     color:black;
     padding: 5%;
-    font-size: 4vw;
+    font-size: 3em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   
@@ -265,4 +265,18 @@
   
 }
 
+.about-title{
+  background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("./images/about/umich_law_school.jpeg") no-repeat top center fixed;
+  background-size: cover;
+  /* width: 100%;
+  margin: auto;
+  display: block; */
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  text-align: left; 
+  color: whitesmoke; 
+  padding: 5em;
+  text-shadow: 2px 2px 5px black;
+}
 
