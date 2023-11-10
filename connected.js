@@ -18,6 +18,19 @@ function filterFunction() {
   }
 }
 
+function translationOptionOn() {
+  document.getElementById("box").style.display = "block";
+  document.getElementById("language-box").style.display = "block";
+  document.getElementById("language-table").style.display = "grid";
+
+  document.getElementById("deleter").style.display = "block";
+}
+
+function translationOptionOff() {
+  document.getElementById("box").style.display = "none";
+  document.getElementById("deleter").style.display = "none";
+}
+
 class Header extends HTMLElement {
     constructor() {
       super();
@@ -26,13 +39,35 @@ class Header extends HTMLElement {
       this.innerHTML = `
       
       <ul>
-          <button class="btn" onclick = "window.location.href='index.html'"><i class="fa fa-home"></i></button>
-          <li style="float:right"><a class="active" href="resources.html">Resources</a></li>
-          <li style="float:right"><a class="active" href="connect.html">Connect</a></li>
-          <li style="float:right"><a class="active" href="jobs.html">Jobs</a></li>
-          <li style="float:right"><a class="active" href="news.html">News</a></li>
-          <li style="float:right"><a class="active" href="about.html">About</a></li>
+        <li style="float:left"><a class="active" href="index.html">Home</a></li>
+        <button class="lang-btn" onclick = "translationOptionOn()">
+            <span>Language: English</span>
+        </button>
+        
+        <li style="float:right"><a class="active" href="resources.html">Resources</a></li>
+        <li style="float:right"><a class="active" href="connect.html">Connect</a></li>
+        <li style="float:right"><a class="active" href="jobs.html">Jobs</a></li>
+        <li style="float:right"><a class="active" href="news.html">News</a></li>
+        <li style="float:right"><a class="active" href="about.html">About</a></li>
       </ul>
+      
+      <div id="box" onclick = "translationOptionOff()">
+        <div id = "language-box" onclick = "translationOptionOff()">
+          <ul id = "language-table" onclick = "translationOptionOff()">
+              <li id = "language">
+                  <a>English</a>
+              </li>
+              <li id = "language">
+                  <a>Chinese</a>
+              </li>
+              <li id = "language">
+                  <a>German</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div id = "deleter" onclick = "translationOptionOff()"></div>
     `;
     }
   }
