@@ -20,7 +20,7 @@
   
   p {
     color:black;
-    font-size: 1em;
+    font-size: 1.25em;
     text-align: center;
   }
 
@@ -265,6 +265,8 @@
   
 }
 
+/* about page */
+
 .about-title{
   background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("./images/about/umich_law_school.jpeg") no-repeat top center fixed;
   background-size: cover;
@@ -280,14 +282,14 @@
   text-shadow: 2px 2px 5px black;
 }
 
-/* about page */
-
 section { 
-  height: 50vh; 
+  width: 100%;
   margin: auto; 
   display:flex; 
   align-items:center;
   justify-content: center;
+  padding: 2em;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)); */
 }
 
 .tag {
@@ -307,9 +309,10 @@ section {
 
 .HoverDiv {
   position: relative;
+  display:flex;
 }
 
-.HoverDiv img {
+.HoverDiv img.move {
   max-width: 100%;
   text-align:center;
   -moz-transition: all 0.3s;
@@ -317,20 +320,20 @@ section {
   transition: all 0.3s;
 }
 
-.HoverDiv:hover img {
+.HoverDiv:hover img.move {
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-img {
+img.move {
     display: inline-block;
     transition: 0.3s;
   position:relative;
   z-index:1;
 }
 
-img:hover {
+img.move:hover {
    -webkit-transform: skewX(-20deg);
   -ms-transform: skewX(-20deg);
   transform: skewX(-20deg);
