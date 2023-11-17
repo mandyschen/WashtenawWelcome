@@ -183,10 +183,13 @@
 
 /* Container holding the image and the text */
 .container {
-  width:100%;
+
   position: relative;
   text-align: center;
   color: white;
+  width: 100%;
+  margin:auto;
+  display: block;
 }
 
 .centered {
@@ -256,13 +259,14 @@
 }
 
 .glowing-text {
-  font-size: 10vw;
-  position: absolute;
+  /* font-size: 10vw; */
+  position: flex;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
   animation: glowing 2s infinite;
   color: white;
+  /* text-align: center; */
   
 }
 
@@ -334,6 +338,7 @@ img.move {
   z-index:1;
 }
 
+
 img.move:hover {
    -webkit-transform: skewX(-20deg);
   -ms-transform: skewX(-20deg);
@@ -342,3 +347,35 @@ img.move:hover {
   -ms-transform-origin:0 0;
   transform-origin:0 0;
 }
+
+.indexpage{
+  background: rgb(220, 220, 220);
+}
+
+/* links */
+a {
+	color: #18272F;
+  position: relative;
+  text-decoration: none;
+}
+
+a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #2b3355;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+
