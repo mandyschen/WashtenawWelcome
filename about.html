@@ -12,23 +12,138 @@
         <!-- Our references -->
         <link rel="stylesheet" href="style.css">
         <script src="connected.js" type="text/javascript" defer></script>
-      </head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="about.js" type="text/javascript" defer></script>
+    </head>
+
     <body>
 
         <header-component></header-component>
 
-        <h1>About Us</h1>
-        <p style="padding:5%">
-            Tech for Social Good at the University of Michigan has the main objective of helping others and changing and utilizing technology
-            in order to best support those who need it the most. <br> <br>
-            The goal of this website is to serve as a central hub for where numerous useful resources are aggregated and can be easily
-            accessed, improving the experience of immigrants and others new to the Washtenaw County area. <br> <br>
-            Thank you for visiting our website, and we hope that you are able to find it useful!
-        </p>
+        <div class="about-title">
+            <h1 style="color: whitesmoke;">Leaders & Best.</h1>
+            <p style="color: whitesmoke;">
+                The University of Michigan is dedicated to inclusivity, and we pride ourselves on making our students
+                feel as welcome as possible, especially when entering an unfamiliar environment. <br> <br>
+                Feel comfortable knowing that fellow Wolverines will always have your back. Go Blue! <br> <br>
+            </p>
+        </div>
 
-        <img src="./images/about/umich_logo.png" alt="ALT TEXT" width="100%" height="auto" style="padding:5% 10%">
+        <div style="padding:5% 10% 0% 10%;">
+            <h1>About Us</h1>
+            <div style="display:block; align-items: center;">
+                <p style="text-align: left;">
+                    Tech for Social Good at the University of Michigan has the main objective of helping others and changing and utilizing technology
+                    in order to best support those who need it the most. <br> <br>
+                    The goal of this website is to serve as a central hub for where numerous useful resources are aggregated and can be easily
+                    accessed, improving the experience of international, transfer, and out of state students. 
+                </p>
+                <!-- <div class="HoverDiv" style="background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('images/about/working_together.jpeg');">
+                    <img class="move" src="./images/jobs/t4sg_logo.jpeg" alt="ALT TEXT" 
+                    onclick = "window.location.href='https://tech4socialgood.com/'"
+                    style="max-width: 100%; margin: auto; display: block; padding: 2em;">
+                </div> -->
+                <!-- <button onclick = "window.location.href='https://tech4socialgood.com/'" class="custom-button" style="background-color: rgba(79,100,145,255); margin:0 auto;
+                display:block;">
+                    <img src="./images/jobs/t4sg_logo.jpeg"  alt="ALT TEXT">
+                    <p> Learn More </p>
+                </button> -->
+                <button onclick = "window.location.href='https://tech4socialgood.com/'" class="custom-button" 
+                                style="background-color: rgba(79,100,145,255); color: white; padding: 0% 2% 0% 2%">
+                    <img src="./images/jobs/t4sg_logo.jpeg" alt="ALT TEXT" width="30em" height="auto" style="padding-bottom: 0.1em;">
+                    Learn More
+                </button>
+            </div>
+        </div> <!-- about us -->
 
-        <footer-component></footer-component>
+        <div style="padding:5% 10% 0% 10%;">
+            <h1>Meet Our Team</h1>
+            <section class="tag gray" 
+                        style="background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('images/banners/computer_banner.jpeg');">
+                <div class="row" style="margin: auto;">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-3">
+                        <img src="./images/headshots/mandy.jpg" alt="ALT TEXT" style="max-width: 100%; margin: auto; display: block; padding: 5% 0%">
+                    </div>
+                    <div class="col-sm-7">
+                        <h4 style="color:whitesmoke">Project Manager: Mandy Chen</h4>
+                        <p style="text-align:left; color: whitesmoke">
+                            Mandy Chen is a student at the University of Michigan, Ann Arbor majoring in Computer Science and minoring in Business.
+                            She loves using technology to help others and to solve problems. 
+                            <br><br>
+                            She serves as project manager and developer on the website.
+                        </p>
+                        <button onclick = "window.location.href='https://www.linkedin.com/in/mandy-chen06/'"class="custom-button">
+                            <img src="./images/jobs/linkedin_logo.png" alt="ALT TEXT" width="20em" height="auto" style="padding-bottom: 0.1em;">
+                            LinkedIn
+                        </button>
+                        <button onclick = "window.location.href='https://github.com/mandyschen'"class="custom-button">
+                            <img src="./images/jobs/github_logo.png" alt="ALT TEXT" width="20em" height="auto" style="padding-bottom: 0.1em;">
+                            GitHub
+                        </button>
+                    </div>
+                    <div class="col-sm-1"></div>
+                </div>  <!-- row -->
+            </section>
+
+            <section class="tag white" 
+                        style="background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url('images/banners/code_banner.jpeg');">
+                <div class="row" style="margin: auto;">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-7">
+                        <h4 style="color:whitesmoke">Tech Lead: Tony Lee</h4>
+                        <p style="text-align:left; color:whitesmoke">
+                            Tony Lee is a 3rd year computer science student studying at the university of Michigan. He has experience working as 
+                            a student developer for student organizations and his personal projects. His primary interest is front-end development 
+                            and natural language processing.  
+                        </p>
+                        <button onclick = "window.location.href='https://www.linkedin.com/in/lee-kazuhide-840b55254/                        '"class="custom-button">
+                            <img src="./images/jobs/linkedin_logo.png" alt="ALT TEXT" width="20em" height="auto" style="padding-bottom: 0.1em;">
+                            LinkedIn
+                        </button>
+                        <button onclick = "window.location.href='https://github.com/kazuhidelee'"class="custom-button">
+                            <img src="./images/jobs/github_logo.png" alt="ALT TEXT" width="20em" height="auto" style="padding-bottom: 0.1em;">
+                            GitHub
+                        </button>
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="./images/headshots/tony.png" alt="ALT TEXT" style="max-width: 100%; margin: auto; display: block; padding: 5% 0%">
+                    </div>
+                    <div class="col-sm-1"></div>
+                </div> <!-- row -->
+            </section>
+
+            <section class="tag gray" 
+                        style="background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('images/banners/computer_banner.jpeg');">
+                <div class="row" style="margin: auto;">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-3">
+                        <img src="./images/headshots/mandy.jpg" alt="ALT TEXT" style="max-width: 100%; margin: auto; display: block; padding: 5% 0%">
+                    </div>
+                    <div class="col-sm-7">
+                        <h4 style="color:whitesmoke">Project Manager: Mandy Chen</h4>
+                        <p style="text-align:left; color: whitesmoke">
+                            Mandy Chen is a student at the University of Michigan, Ann Arbor majoring in Computer Science and minoring in Business.
+                            She loves using technology to help others and to solve problems. 
+                            <br><br>
+                            She serves as project manager and developer on the website.
+                        </p>
+                        <button onclick = "window.location.href='https://www.linkedin.com/in/mandy-chen06/'"class="custom-button">
+                            <img src="./images/jobs/linkedin_logo.png" alt="ALT TEXT" width="20em" height="auto" style="padding-bottom: 0.1em;">
+                            LinkedIn
+                        </button>
+                        <button onclick = "window.location.href='https://github.com/mandyschen'"class="custom-button">
+                            <img src="./images/jobs/github_logo.png" alt="ALT TEXT" width="20em" height="auto" style="padding-bottom: 0.1em;">
+                            GitHub
+                        </button>
+                    </div>
+                    <div class="col-sm-1"></div>
+                </div> <!-- row -->
+            </section>
+        </div> <!-- meet our team -->
+
+    <footer-component></footer-component>
 
     </body>
+    
 </html>
