@@ -6,22 +6,23 @@
   
   h1 {
     color: black;
-    text-align: center;
-    font-size: 5em;
-    margin-top: 5%;
+    text-align: left;
+    font-size: 5vw;
+    /* margin: 5%; */
   }
 
   h3 {
     color:black;
-    padding: 5%;
+    padding: 10%;
     font-size: 3em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
   }
   
   p {
     color:black;
-    font-size: 1.25em;
-    text-align: center;
+    font-size: 1.5em;
+    text-align: left;
+    /* margin: 5%; */
   }
 
   p3 {
@@ -275,10 +276,10 @@
   display: block; */
   color: white;
   text-align: center;
-  font-size: 2em;
+  /* font-size: 2em; */
   text-align: left; 
   color: whitesmoke; 
-  padding: 5em;
+  padding: 10%;
   text-shadow: 2px 2px 5px black;
 }
 
