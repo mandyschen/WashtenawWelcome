@@ -138,16 +138,25 @@
   display: none;
   position: absolute;
   background-color: #f6f6f6;
-  min-width: 230px;
+  min-width: 150px;
   overflow: auto;
   border: 1px solid #ddd;
   z-index: 6;
+  left: -40px; 
 }
 
 .dropdown-content a {
   color: black;
-  padding: 12px 16px;
+  padding: 10px 5px;
   text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
   display: block;
 }
 
@@ -200,7 +209,6 @@
   transform: translate(-50%, -50%);
 }
 
-
 /* Contact us */
 
 .popup {
@@ -228,6 +236,79 @@
 }
 .show {
   display: block;
+}
+
+/* language option */
+#box {
+  margin: 0;
+  width: 201px;
+  height: 150px;
+  background-color: #212121;
+  position: fixed;
+  display: none;
+  inset: 0 0 auto auto;
+  align-items: center;
+  justify-content: center;
+  left: 75px;
+  top: 65px; 
+  z-index: 2;
+}
+
+#language-box {
+  width: 175px;
+  height: 120px;
+  background-color: white;
+  border: 2px solid; /* Added "solid" for the border style */
+  border-radius: 2px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-left: 13px;
+  margin-top: 15px;
+  transform: translateZ(0);
+  z-index: 2;
+}
+
+#language-table {
+  display: grid; /* Changed "grid-template-columns" to "display: grid" */
+  grid-template-columns: 1fr 1fr;
+  font-size: 13px;
+  z-index: 2;
+}
+
+#language {
+  background-color:white;
+}
+
+#language:hover {
+  background-color:#aeb0b5;
+}
+
+.lang-btn {
+  background-color: white;
+  border: none;
+  color: rgb(133, 133, 133);
+  padding: 0;
+  position: fixed;
+  left: 80px;
+  top: 16px; 
+  font-size: 13px;
+  cursor: pointer;
+}
+
+#deleter {
+  height: 100%;
+  width: 100%;
+  margin-top: 50px;
+  display:none;
+  align-items: center;
+  z-index: 1;
+  position: fixed;
+}
+
+@media screen and (max-width: 610px) {
+  .lang-btn {
+    display: none;
+  }
 }
 
 .custom-button {

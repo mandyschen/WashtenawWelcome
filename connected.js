@@ -18,6 +18,18 @@ function filterFunction() {
   }
 }
 
+function translationOptionOn() {
+  document.getElementById("box").style.display = "block";
+  document.getElementById("language-box").style.display = "block";
+  document.getElementById("language-table").style.display = "grid";
+  document.getElementById("deleter").style.display = "block";
+}
+
+function translationOptionOff() {
+  document.getElementById("box").style.display = "none";
+  document.getElementById("deleter").style.display = "none";
+}
+
 class Header extends HTMLElement {
     constructor() {
       super();
@@ -25,59 +37,80 @@ class Header extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `
       <ul>
-        <button class="btn" onclick="window.location.href='index.html'"><i class="fa fa-home"></i></button>
-        <li style="float:right"><a class="active" href="resources.html">Resources</a></li>
-        <li style="float:right"><a class="active" href="connect.html">Connect</a></li>
-        <li style="float:right"><a class="active" href="jobs.html">Jobs</a></li>
-        <li style="float:right"><a class="active" href="news.html">News</a></li>
-        <li style="float:right"><a class="active" href="about.html">About</a></li>
+        <li style="float:left"><a class="active" href="index.html">Home</a></li>
+        <button class="lang-btn" onclick = "translationOptionOn()">
+            <span>Language: English</span>
+        </button>
+        
+        <li class="dropdown" style="float:right">
+          <a class="active" href="resources.html">Resources</a>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </li>
+
+        <li class="dropdown" style="float:right">
+          <a class="active" href="connect.html">Connect</a>
+          <div class="dropdown-content" style="float:right;">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </li>
+
+        <li class="dropdown" style="float:right">
+          <a class="active" href="jobs.html">Jobs</a>
+          <div class="dropdown-content" style="float:right;">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </li>
+
+        <li class="dropdown" style="float:right">
+          <a class="active" href="news.html">News</a>
+          <div class="dropdown-content" style="float:right;">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </li>
+
+        <li class="dropdown" style="float:right">
+          <a class="active" href="about.html">About</a>
+          <div class="dropdown-content" style="float:right;">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </li>
       </ul>
+      
+      <div id="box" onclick = "translationOptionOff()">
+        <div id = "language-box" onclick = "translationOptionOff()">
+          <ul id = "language-table" onclick = "translationOptionOff()">
+              <li id = "language">
+                  <a>English</a>
+              </li>
+              <li id = "language">
+                  <a>Español</a>
+              </li>
+              <li id = "language">
+                  <a>中文</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div id = "deleter" onclick = "translationOptionOff()"></div>
     `;
     }
   }
 
-// var images = ["./images/index/michigannews.jpeg"];
-
-// images.forEach(function (imgSrc) {
-//   var img = new Image();
-//   img.src = imgSrc;
-// });
-  // drop down menu for when translation is added
-
-  // class Header extends HTMLElement {
-  //   constructor() {
-  //     super();
-  //   }
-  //   connectedCallback() {
-  //     this.innerHTML = `
-      
-  //     <ul>
-  //         <button class="btn" onclick = "window.location.href='index.html'"><i class="fa fa-home"></i></button>
-  //         <div class="dropdown">
-  //           <button onclick="myFunction()" class="dropbtn">Translate</button>
-  //           <div id="myDropdown" class="dropdown-content">
-  //             <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-  //             <a href="#about">English</a>
-  //             <a href="#base">Español</a>
-  //             <a href="#blog">中文</a>
-  //           </div>
-  //         </div>
-  //         <li style="float:right"><a class="active" href="resources.html">Resources</a></li>
-  //         <li style="float:right"><a class="active" href="connect.html">Connect</a></li>
-  //         <li style="float:right"><a class="active" href="jobs.html">Jobs</a></li>
-  //         <li style="float:right"><a class="active" href="news.html">News</a></li>
-  //         <li style="float:right"><a class="active" href="about.html">About</a></li>
-  //     </ul>
-  //   `;
-  //   }
-  // }
 
   customElements.define('header-component', Header);
-
-
-
-
-
 
   class Footer extends HTMLElement {
     constructor() {
