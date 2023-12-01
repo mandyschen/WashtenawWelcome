@@ -37,7 +37,7 @@ class Header extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `
       <ul>
-        <li style="float:left"><a class="active" href="index.html">Home</a></li>
+        <li style="float:left; padding-left: 200px"><a class="active" href="index.html">Home</a></li>
         <button class="lang-btn" onclick = "translationOptionOn()">
             <span>Language: English</span>
         </button>
