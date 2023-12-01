@@ -249,7 +249,7 @@
   inset: 0 0 auto auto;
   align-items: center;
   justify-content: center;
-  left: 75px;
+  left: 275px;
   top: 65px; 
   z-index: 2;
 }
@@ -289,7 +289,7 @@
   color: rgb(133, 133, 133);
   padding: 0;
   position: fixed;
-  left: 80px;
+  left: 300px;
   top: 16px; 
   font-size: 13px;
   cursor: pointer;
