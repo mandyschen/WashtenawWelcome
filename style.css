@@ -7,13 +7,13 @@
   h1 {
     color: black;
     text-align: left;
-    font-size: 5em;
+    font-size: 36px;
   }
 
   h2 {
     color: black;
     text-align: left;
-    font-size: 3em;
+    font-size: 20px;
   }
 
   h3 {
@@ -24,9 +24,9 @@
   
   p {
     color:black;
-    font-size: 2em;
+    font-size: 18px;
     text-align: left;
-    line-height: 2em;
+    line-height: 28px;
   }
 
   p2 {
