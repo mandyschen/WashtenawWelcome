@@ -77,6 +77,15 @@ class Header extends HTMLElement {
             <a href="#">Link 3</a>
           </div>
         </li>
+        
+        <li class="dropdown" style="float:right">
+          <a class="active" href="groceries.html">Groceries</a>
+          <div class="dropdown-content" style="float:right;">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </li>
 
         <li class="dropdown" style="float:right">
           <a class="active" href="about.html">About</a>
