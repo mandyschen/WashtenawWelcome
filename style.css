@@ -1,55 +1,40 @@
-  
   body {
-    background-color: #e9e9eb;
+    background-color: white;
     height: 100%;
+    padding: 0% 10%;
   }
   
   h1 {
     color: black;
-    text-align: center;
-    font-size: 7vw;
-    margin-top: 5%;
+    text-align: left;
+    font-size: 35px;
   }
 
-  h3 {
-    color:black;
-    padding: 5%;
-    font-size: 4vw;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  h2 {
+    color: black;
+    text-align: left;
+    font-size: 25px;
   }
   
   p {
     color:black;
-    font-size: 2vw;
-    text-align: center;
-  }
-
-  p3 {
-    color:black;
-    font-size: 1vw;
-    text-align: center;
-    padding: 10%;
-    display:block;
+    font-size: 20px;
     text-align: left;
+    line-height: 40px;
   }
 
   /* footer */
 
   footer {
-    font-size: 10px;
+    font-size: 1.5em;
     position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
-    padding: 15px;
+    padding: 1em;
     background-color: black;
     color: white;
-    z-index: 5
-  }
-
-  p2 {
-    font-family: verdana;
-    font-size: 10px;
+    z-index: 5;
   }
 
   /* header */
@@ -57,13 +42,14 @@
   ul {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 90%;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: visible;
     background-color: white;
-    z-index: 5
+    z-index: 5;
+    font-size: 2em;
   }
   
   li {
@@ -74,7 +60,7 @@
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1vw 2vw;
     text-decoration: none;
   }
   
@@ -90,15 +76,15 @@
     background-color: white; 
     border: none; 
     color: black; 
-    padding: 12px 16px; 
-    font-size: 16px; 
+    padding: 1em; 
+    font-size: 2em; 
     cursor: pointer;
   }
   
-  .btn:hover {
-    color: dodgerblue;
+  /* .btn:hover {
+    color: black;
     background-color: white;
-  }
+  } */
 
 /* Dropdown Button */
 .dropbtn {
@@ -137,16 +123,25 @@
   display: none;
   position: absolute;
   background-color: #f6f6f6;
-  min-width: 230px;
+  min-width: 150px;
   overflow: auto;
   border: 1px solid #ddd;
   z-index: 6;
+  left: -40px; 
 }
 
 .dropdown-content a {
   color: black;
-  padding: 12px 16px;
+  padding: 10px 5px;
   text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
   display: block;
 }
 
@@ -154,35 +149,9 @@
 
 .show {display: block;}
 
-/* The alert message box */
-.alert {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-  background-color: red; 
-  color: white;
-  z-index: 10;
-}
-
-.closebtn {
-  margin-left: 15px;
-  color: white;
-  font-weight: bold;
-  float: right;
-  font-size: 22px;
-  line-height: 20px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.closebtn:hover {
-  color: black;
-}
-
 
 /* Container holding the image and the text */
-.container {
-
+/* .container {
   position: relative;
   text-align: center;
   color: white;
@@ -197,8 +166,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
+} */
 
 /* Contact us */
 
@@ -229,46 +197,149 @@
   display: block;
 }
 
-.custom-button {
-  background-color: rgb(0, 0, 0);
-  color: white; 
-  border-radius: 8px;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  transition-duration: 0.4s;
-  /* font-weight: bold; */
+/* language option */
+#box {
+  margin: 0;
+  width: 201px;
+  height: 150px;
+  background-color: #212121;
+  position: fixed;
+  display: none;
+  inset: 0 0 auto auto;
+  align-items: center;
+  justify-content: center;
+  left: 275px;
+  top: 65px; 
+  z-index: 2;
 }
 
-.custom-button:hover {
-  background-color: white; 
-  color: rgb(47, 54, 61);
-  font-weight: bold;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+#language-box {
+  width: 175px;
+  height: 120px;
+  background-color: white;
+  border: 2px solid; /* Added "solid" for the border style */
+  border-radius: 2px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-left: 13px;
+  margin-top: 15px;
+  transform: translateZ(0);
+  z-index: 2;
 }
 
-@keyframes glowing {
-  0% {
-    text-shadow: 0 0 5px rgba(255, 202, 123, 0.5);
+#language-table {
+  display: grid; /* Changed "grid-template-columns" to "display: grid" */
+  grid-template-columns: 1fr 1fr;
+  font-size: 13px;
+  z-index: 2;
+}
+
+#language {
+  background-color:white;
+}
+
+#language:hover {
+  background-color:#aeb0b5;
+}
+
+.lang-btn {
+  background-color: white;
+  border: none;
+  color: rgb(133, 133, 133);
+  padding: 0;
+  position: fixed;
+  left: 300px;
+  top: 16px; 
+  font-size: 13px;
+  cursor: pointer;
+}
+
+#deleter {
+  height: 100%;
+  width: 100%;
+  margin-top: 50px;
+  display:none;
+  align-items: center;
+  z-index: 1;
+  position: fixed;
+}
+
+@media screen and (max-width: 610px) {
+  .lang-btn {
+    display: none;
   }
-  50% {
-    text-shadow: 0 0 10px rgb(255, 192, 98, 1.0);
-  }
-  100% {
-    text-shadow: 0 0 5px rgba(255, 202, 123, 0.5);
-  }
 }
 
-.glowing-text {
-  /* font-size: 10vw; */
-  position: flex;
-  top: 50%;
-  left: 50%;
-  /* transform: translate(-50%, -50%); */
-  animation: glowing 2s infinite;
-  color: white;
-  /* text-align: center; */
-  
+/* about page */
+
+.about-title{
+  background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("./images/about/umich_law_school.jpeg") no-repeat top center fixed;
+  background-size: cover;
+  text-align: left; 
+  color: whitesmoke; 
+  padding: 10%;
+  text-shadow: 2px 2px 5px black;
 }
 
+section { 
+  width: 100%;
+  margin: auto; 
+  display:flex; 
+  align-items:center;
+  justify-content: center;
+  padding: 2em;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)); */
+}
+
+.tag {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+
+.tag.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.gray { background-color: lightgray; }
+.white { background-color: whitesmoke; }
+
+
+.HoverDiv {
+  position: relative;
+  display:flex;
+}
+
+.HoverDiv img.move {
+  max-width: 100%;
+  text-align:center;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.HoverDiv:hover img.move {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+img.move {
+    display: inline-block;
+    transition: 0.3s;
+  position:relative;
+  z-index:1;
+}
+
+img.move:hover {
+   -webkit-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  -webkit-transform-origin:0 0;
+  -ms-transform-origin:0 0;
+  transform-origin:0 0;
+}
 
 .indexpage{
   background: rgb(220, 220, 220);
@@ -301,3 +372,75 @@ a:hover::before {
 }
 
 
+.routes {
+  border: none;
+  color: black;
+  width: 90%;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  /* margin: 4px 2px; */
+  cursor: pointer;
+  background-color: white;
+}
+
+.routes:hover {
+  background-color: #414141;
+  color: white;
+} 
+
+#container {
+  width: 100%;
+  margin: auto;
+}
+
+#first {
+  width: 30%;
+  float: left;
+  height: auto;
+}
+
+#second {
+  width: 70%;
+  float: left;
+  background-color: lightgray;
+}
+
+#clear {
+  clear: both;
+}
+
+.ourButton {
+  border: none;
+  color: black;
+  padding: 2vw;
+  text-align: center;
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+.ourButton:hover {
+  background-color: black;
+  color: white;
+} 
+
+/* 
+.buttonRoutes button {
+  background-color: #04AA6D; 
+  border: 1px solid green; 
+  color: white; 
+  padding: 10px 24px; 
+  cursor: pointer; 
+  width: 50%; 
+  display: block; 
+}
+
+.buttonRoutes button:not(:last-child) {
+  border-bottom: none;
+}
+
+.buttonRoutes button:hover {
+  background-color: #3e8e41;
+} */
