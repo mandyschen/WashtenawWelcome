@@ -23,7 +23,7 @@ const locationsStrings = ["bursleyBaits", "commuterNorth", "commuterSouth", "cri
 for (let i = 0; i < locations.length; i++) {
     locations[i].addEventListener("click", function() {
         currentMap.src = "./transportation/map/" + locationsStrings[i] + ".png";
-        currentSchedule.src = "./transportation/schedule/" + locationsStrings[i] +"S.png";
+        currentSchedule.src = "./transportation/schedule/" + locationsStrings[i] +"Sched.png";
         currentScheduleDownload.href = currentSchedule.src;
     });
 }
@@ -31,12 +31,4 @@ for (let i = 0; i < locations.length; i++) {
 // bursleyBaits.addEventListener("click", function() {
 //     currentMap.src = "./transportation/map/bursleyBaits.png";
 //     currentSchedule.src = "./transportation/schedule/bursleyBaitsS.png";
-// });
-// commuterNorth.addEventListener("click", function() {
-//     currentMap.src = "./transportation/map/commuterNorth.png";
-//     currentSchedule.src = "./transportation/schedule/commuterNorthS.png";
-// });
-// commuterSouth.addEventListener("click", function() {
-//     currentMap.src = "./transportation/map/commuterSouth.png";
-//     currentSchedule.src = "./transportation/schedule/commuterSouthS.png";
 // });

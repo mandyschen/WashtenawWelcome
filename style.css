@@ -371,6 +371,7 @@ transform-origin: left;
 transform: scaleX(1);
 }
 
+/* Transportation */
 
 .routes {
 border: none;
@@ -387,61 +388,15 @@ background-color: white;
 }
 
 .routes:hover {
-background-color: #414141;
-color: white;
+  background-color: #414141;
+  color: white;
 } 
+
+#currentSchedule {
+  width: 500px;
+}
 
 #container {
 width: 100%;
 margin: auto;
 }
-
-#first {
-width: 30%;
-float: left;
-height: auto;
-}
-
-#second {
-width: 70%;
-float: left;
-background-color: lightgray;
-}
-
-#clear {
-clear: both;
-}
-
-.ourButton {
-border: none;
-color: black;
-padding: 2vw;
-text-align: center;
-font-size: 2vw;
-cursor: pointer;
-}
-
-.ourButton:hover {
-background-color: black;
-color: white;
-} 
-
-/* 
-.buttonRoutes button {
-background-color: #04AA6D; 
-border: 1px solid green; 
-color: white; 
-padding: 10px 24px; 
-cursor: pointer; 
-width: 50%; 
-display: block; 
-}
-
-.buttonRoutes button:not(:last-child) {
-border-bottom: none;
-}
-
-.buttonRoutes button:hover {
-background-color: #3e8e41;
-} */
-
