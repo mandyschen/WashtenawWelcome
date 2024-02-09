@@ -7,40 +7,20 @@
   h1 {
     color: black;
     text-align: left;
-    font-size: 5em;
+    font-size: 35px;
   }
 
   h2 {
     color: black;
     text-align: left;
-    font-size: 3em;
-  }
-
-  h3 {
-    color:black;
-    padding: 10%;
-    font-size: 2em;
+    font-size: 25px;
   }
   
   p {
     color:black;
-    font-size: 2em;
+    font-size: 20px;
     text-align: left;
-    line-height: 2em;
-  }
-
-  p2 {
-    font-family: verdana;
-    font-size: 3em;
-  }
-
-  p3 {
-    color:black;
-    font-size: 5em;
-    text-align: center;
-    padding: 10%;
-    display:block;
-    text-align: left;
+    line-height: 40px;
   }
 
   /* footer */
@@ -170,34 +150,8 @@
 .show {display: block;}
 
 
-/* Alert box - to be deleted
-.alert {
-  position: -webkit-sticky; 
-  position: sticky;
-  top: 0;
-  background-color: red; 
-  color: white;
-  z-index: 10;
-}
-
-.closebtn {
-  margin-left: 15px;
-  color: white;
-  font-weight: bold;
-  float: right;
-  font-size: 22px;
-  line-height: 20px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.closebtn:hover {
-  color: black;
-} */
-
-
 /* Container holding the image and the text */
-.container {
+/* .container {
   position: relative;
   text-align: center;
   color: white;
@@ -212,7 +166,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} */
 
 /* Contact us */
 
@@ -316,57 +270,11 @@
   }
 }
 
-.custom-button {
-  background-color: rgb(0, 0, 0);
-  color: white; 
-  border-radius: 8px;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  transition-duration: 0.4s;
-  /* font-weight: bold; */
-}
-
-.custom-button:hover {
-  background-color: white; 
-  color: rgb(47, 54, 61);
-  font-weight: bold;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-@keyframes glowing {
-  0% {
-    text-shadow: 0 0 5px rgba(255, 202, 123, 0.5);
-  }
-  50% {
-    text-shadow: 0 0 10px rgb(255, 192, 98, 1.0);
-  }
-  100% {
-    text-shadow: 0 0 5px rgba(255, 202, 123, 0.5);
-  }
-}
-
-.glowing-text {
-  /* font-size: 10vw; */
-  position: flex;
-  top: 50%;
-  left: 50%;
-  /* transform: translate(-50%, -50%); */
-  animation: glowing 2s infinite;
-  color: white;
-  /* text-align: center; */
-  
-}
-
 /* about page */
 
 .about-title{
   background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("./images/about/umich_law_school.jpeg") no-repeat top center fixed;
   background-size: cover;
-  /* width: 100%;
-  margin: auto;
-  display: block; */
-  color: white;
-  text-align: center;
-  /* font-size: 2em; */
   text-align: left; 
   color: whitesmoke; 
   padding: 10%;
@@ -468,11 +376,11 @@ a:hover::before {
   border: none;
   color: black;
   width: 90%;
-  padding: 2vw;
+  padding: 20px;
   text-align: center;
   text-decoration: none;
   display: block;
-  font-size: 2vw;
+  font-size: 20px;
   /* margin: 4px 2px; */
   cursor: pointer;
   background-color: white;
