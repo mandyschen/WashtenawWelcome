@@ -429,7 +429,6 @@ a:hover::before {
 
 /* Dropdown Button */
 #myInput {
-  box-sizing: border-box;
   background-image: './images/plane.png';
   background-position: 14px 12px;
   background-repeat: no-repeat;
@@ -442,9 +441,10 @@ a:hover::before {
 #myInput:focus {outline: 3px solid #ddd;}
 
 .navbar-kernal {
+  display:block;
   width: 100%;
   height: 75px;
-  padding: 26px 97px 27px 580px;
+  padding: 26px 97px 27px 833px;
   background-color: #f5f7fa;
 }
 
@@ -461,6 +461,28 @@ a:hover::before {
   text-align: center;
   color: #2b6c7a;
   margin-right: 45px;
+}
+
+.navbar-content {
+  display: none;
+  position:absolute;
+  background-color: white; /* Adjust as needed */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.navbar-button:hover + .navbar-content {
+  display: block;
+}
+
+.navbar-content a {
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  color: black; /* Adjust as needed */
+}
+
+.navbar-content a:hover {
+  background-color: #f5f5f5; /* Adjust as needed */
 }
 
 .show {display: block;}
