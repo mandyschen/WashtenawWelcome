@@ -57,118 +57,6 @@
     z-index: 5;
   }
 
-  /* header */
-
-  ul {
-    position: fixed;
-    top: 0;
-    width: 90%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: visible;
-    background-color: white;
-    z-index: 5;
-    font-size: 2em;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 1vw 2vw;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: dodgerblue;
-  }
-
-  .active {
-    background-color: white;
-  }
-
-  .btn {
-    background-color: white; 
-    border: none; 
-    color: black; 
-    padding: 1em; 
-    font-size: 2em; 
-    cursor: pointer;
-  }
-  
-  /* .btn:hover {
-    color: black;
-    background-color: white;
-  } */
-
-/* Dropdown Button */
-.dropbtn {
-  background-color: white;
-  color: black;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  z-index: 6;
-}
-
-.dropbtn:hover, .dropbtn:focus {
-  background-color: dodgerblue;
-}
-
-#myInput {
-  box-sizing: border-box;
-  background-image: './images/plane.png';
-  background-position: 14px 12px;
-  background-repeat: no-repeat;
-  font-size: 16px;
-  padding: 14px 20px 12px 45px;
-  border: none;
-  border-bottom: 1px solid #ddd;
-}
-
-#myInput:focus {outline: 3px solid #ddd;}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  z-index: 6;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f6f6f6;
-  min-width: 150px;
-  overflow: auto;
-  border: 1px solid #ddd;
-  z-index: 6;
-  left: -40px; 
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 10px 5px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown a:hover {background-color: #ddd;}
-
-.show {display: block;}
-
 
 /* Alert box - to be deleted
 .alert {
@@ -536,3 +424,43 @@ a:hover::before {
 .buttonRoutes button:hover {
   background-color: #3e8e41;
 } */
+
+/* header */
+
+/* Dropdown Button */
+#myInput {
+  box-sizing: border-box;
+  background-image: './images/plane.png';
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.navbar-kernal {
+  width: 100%;
+  height: 75px;
+  padding: 26px 97px 27px 580px;
+  background-color: #f5f7fa;
+}
+
+.navbar-button {
+  width: 134px;
+  height: 20px;
+  flex-grow: 0;
+  font-family: Inter;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2b6c7a;
+  margin-right: 45px;
+}
+
+.show {display: block;}
