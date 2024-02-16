@@ -411,8 +411,8 @@ background-color: white;
 }
 
 .routes:hover {
-background-color: #414141;
-color: white;
+  background-color: #414141;
+  color: white;
 } 
 
 #currentSchedule {
@@ -422,4 +422,76 @@ color: white;
 #container {
   width: 100%;
   margin: auto;
+}
+
+/* Home Page */
+/* Container Style */
+.flex-container {
+  display: flex;
+  align-items: flex-start;
+  background-color: #d9d9d9;
+  width: 100vw; /* Full viewport width */
+  box-sizing: border-box;
+}
+
+/* Large Image Style */
+.large-image {
+  flex: 0 0 636px; /* Fixed size, replace with your ratio or size */
+  height: 400px;
+  background-image: url('./images/index/brunch.png');
+  background-size: cover;
+  margin-right: 20px;
+}
+
+/* Small Images Wrapper Style */
+.small-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Small Image Style */
+.small-image {
+  width: 353px;
+  height: 119px;
+  background-size: cover;
+  margin-bottom: 20px;  /* Margin between the small images */
+}
+
+/* Remove margin from the last small image */
+.small-image:last-child {
+  margin-bottom: 0;
+}
+
+/* Home Page Buttons */
+.large-button {
+  width: 250px;
+  height: 50px;
+  margin: 20px 23px 0 20px;
+  padding: 15.1px 59.4px 20.1px 59.4px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ddd;
+  background-color: #393939;
+}
+
+.medium-button {
+  width: 176px;
+  height: 40px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
 }
