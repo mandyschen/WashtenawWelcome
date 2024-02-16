@@ -23,6 +23,29 @@ p {
   line-height: 40px;
 }
 
+.selection {
+  width: fit-content;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+}
+.selection input{ display: none; }
+.selection label{
+  font-family: sans-serif;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin: 10px 20px;
+}
+.selection label:hover{
+  background: lightgray;
+}
+.selection input:checked + label{
+  background: gray;
+}
+
 /* footer */
 
 footer {
