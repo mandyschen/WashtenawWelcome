@@ -17,14 +17,13 @@
 
   <header-component></header-component>
 
-  <div style="background: linear-gradient(rgba(255, 255, 255, 0.677), rgba(165, 165, 165, 0.5)), 
-              url(./images/about/umich_law_school.jpeg); background-size: cover;
-              width: 1280px;
-              height: 357px;
-              margin: 1px 0 33px;
-              padding: 112px 296px 90px 128px;">
-    <h1 style="text-align: center;">Welcome to Arbor Advisor</h1>
-    <p style="text-align: center;">
+  <!-- <div style="background: linear-gradient(rgba(255, 255, 255, 0.677), rgba(165, 165, 165, 0.5)), 
+              url(./images/about/umich_law_school.jpeg);width: 1280px;
+  height: 357px; padding: 112px 296px 90px 128px;"> -->
+  <div class="about-title" style="background: linear-gradient(rgba(255, 255, 255, 0.677), rgba(165, 165, 165, 0.5)), 
+  url(./images/about/umich_law_school.jpeg);">
+    <h1 style="text-align: center; text-shadow: none; font-weight: bold;">Welcome to Arbor Advisor</h1>
+    <p style="text-align: center; text-shadow: none;">
       Here’s some brief intro on the article<br>
       Here’s some brief intro on the article 
       Here’s some brief intro on the article<br> 
@@ -35,53 +34,95 @@
 
   
 
-<h1 style="margin: 33px 216.4px 29px 128px;">What’s new on campus</h1>
-<div style="display: flex; align-items: flex-start; width: 900px; margin: 29px 51px 74px 120px; background-color: #d9d9d9;">
-    <div style="width: 636px; height: 400px; background: url('./images/about/umich_law_school.jpeg'); background-size: cover;"></div>
-    <div style="display: flex; flex-direction: column; justify-content: space-between; margin: 29px 51px 74px 120px;">
-        <div style="width: 353px; height: 119px; background: url('./images/about/umich_law_school.jpeg'); margin: 34px 120px 18px 0;"></div>
-        <div style="width: 353px; height: 119px; background: url('./images/about/umich_law_school.jpeg'); margin: 18px 120px 20px 0;"></div>
-        <div style="width: 353px; height: 119px; background: url('./images/about/umich_law_school.jpeg'); margin: 19px 120px 74px 0"></div>
+<h1 style = "margin-top: 80px">What’s new on campus</h1>
+<div style="display: flex; align-items: flex-start; background-color: #d9d9d9;">
+  <div style="width: 636px; height: 400px; background-image: url('./images/index/brunch.png'); background-size: cover; margin-right: 20px;">
+    <div class="inner-box" style=" background-color: rgba(35, 42, 45, 0.75);">
+      <h2 style="color: #d9d9d9;">Restaurant week is here!</h2>
     </div>
+  </div>
+  <div style="display: flex; flex-direction: column; justify-content: space-between;">
+      <div style="width: 353px; height: 119px; background-image: url('./images/index/kids.png'); background-size: cover; margin-bottom: 20px;">
+        <div class="inner-box" style="background-color: rgba(35, 42, 45, 0.75);">
+          <h2 style="color: #d9d9d9;">Restaurant week is here!</h2>
+        </div>
+      </div>
+      <div style="width: 353px; height: 119px; background-image: url('./images/index/soccer.png'); background-size: cover; margin-bottom: 20px;">
+        <div class="inner-box" style="background-color: rgba(35, 42, 45, 0.75);">
+          <h2 style="color: #d9d9d9;">Restaurant week is here!</h2>
+        </div>
+      </div>
+      <div style="width: 353px; height: 119px; background-image: url('./images/index/workshops.png'); background-size: cover;">
+        <div class="inner-box" style="background-color: rgba(35, 42, 45, 0.75);">
+          <h2 style="color: #d9d9d9;">Restaurant week is here!</h2>
+        </div>
+      </div>
+  </div>
 </div>
 
 
-  <h1 style = "margin: 33px 216.4px 29px 128px;">What can you find on Washtenaw?</h1>
-  <div style="width: 500px; margin: 35px 79px 57px 128px; background-color: #d9d9d9; overflow: hidden;">
-    <img src="./images/about/umich_law_school.jpeg" alt="ALT TEXT" style="max-width: 50%; float: left; margin-right: 20px;">
-    <div style="overflow: hidden;">
-        <p style="text-align:left">
-            Here’s some brief intro on the article Here’s some brief intro on the article <br>
-            Here’s some brief intro on the article Here’s some brief intro on the article <br>
-            Here’s some brief asdasdsajdasjdasjdaksdasjkdasjdasjdkasdjasdkasjdaskdsjdkasjdas<br>
-            jkdasjdaskdjaskdjaskdasjdaskdjaskdjsadkasjdkasdjaskasjdjaskasjdjask.<br>
-            <button>Button</button>
+  <h1 style = "margin-top: 80px">What can you find on Washtenaw?</h1>
+  <div class="row">
+    <div class="col-sm-5">
+        <img src="./images/about/umich_law_school.jpeg" alt="Michigan Law School" style="width: 100%; height: auto; margin: 35px 0px 57px 0px;">
+    </div>
+    <div class="col-sm-7" style="margin: 35px 0px 57px 0px;">
+        <p> 
+            Here’s some brief intro on the article Here’s some brief intro on the article 
+            Here’s some brief intro on the article Here’s some brief intro on the article
+            Here’s some brief asdasdsajdasjdasjdaksdasjkdasjdasjdkasdjasdkasjdaskdsjdkasjdas
+            jkdasjdaskdjaskdjaskdasjdaskdjaskdjsadkasjdkasdjaskasjdjaskasjdjask.
         </p>
+        <button class="medium-button">Button</button>
     </div>
   </div>
 
-  <div style="width: 500px; margin: 35px 79px 57px 128px; background-color: #d9d9d9;">
-    <img src="./images/about/umich_law_school.jpeg" alt="ALT TEXT" style="max-width: 50%; float: left; margin-right: 20px;">
-    <div style="width: 593px;height: 110px; margin: 35px 126px 35px 80px;">
-        <p style="text-align:left">
-            Here’s some brief intro on the article Here’s some brief intro on the article <br>
-            Here’s some brief intro on the article Here’s some brief intro on the article <br>
-            Here’s some brief asdasdsajdasjdasjdaksdasjkdasjdasjdkasdjasdkasjdaskdsjdkasjdas<br>
-            jkdasjdaskdjaskdjaskdasjdaskdjaskdjsadkasjdkasdjaskasjdjaskasjdjask.<br>
-          <button>Button</button>
+  <div class="row">
+    <div class="col-sm-5">
+        <img src="./images/about/umich_law_school.jpeg" alt="Michigan Law School" style="width: 100%; height: auto; margin: 35px 0px 57px 0px;">
+    </div>
+    <div class="col-sm-7" style="margin: 35px 0px 57px 0px;">
+        <p>
+            Here’s some brief intro on the article Here’s some brief intro on the article 
+            Here’s some brief intro on the article Here’s some brief intro on the article
+            Here’s some brief asdasdsajdasjdasjdaksdasjkdasjdasjdkasdjasdkasjdaskdsjdkasjdas
+            jkdasjdaskdjaskdjaskdasjdaskdjaskdjsadkasjdkasdjaskasjdjaskasjdjask.
         </p>
+          <button class="medium-button">Button</button>
     </div>
   </div>
 
+  <div class="row">
+    <div class="col-sm-5">
+        <img src="./images/about/umich_law_school.jpeg" alt="Michigan Law School" style="width: 100%; height: auto; margin: 35px 0px 57px 0px;">
+    </div>
+    <div class="col-sm-7" style="margin: 35px 0px 57px 0px;">
+        <p>
+            Here’s some brief intro on the article Here’s some brief intro on the article 
+            Here’s some brief intro on the article Here’s some brief intro on the article
+            Here’s some brief asdasdsajdasjdasjdaksdasjkdasjdasjdkasdjasdkasjdaskdsjdkasjdas
+            jkdasjdaskdjaskdjaskdasjdaskdjaskdjsadkasjdkasdjaskasjdjaskasjdjask.
+        </p>
+          <button class="medium-button">Button</button>
+    </div>
+  </div>
   
 
-  <div class="Rectangle-86;">
-    <h2>Fresh off the plane: Journey in US</h2>
-    <p>Here’s some brief intro on the article 
-      Here’s some brief intro on the article 
-      Here’s some brief intro on the article 
-      Here’s some brief intro on the article 
-      Here’s some brief</p>
+  <div class="Rectangle-86" style="background-color: #fdf5f5;">
+    <div class="row">
+      <div class="col-sm-5">
+        <h1 style="font-weight: bold; margin: 0 40px 30px 20px;">Fresh off the plane: Journey in US</h1>
+        <p style="margin: 0 0 0 31px">
+          Here’s some brief intro on the article Here’s some brief intro on the article Here’s some brief intro on the article Here’s some brief intro on the article Here’s some brief
+        </p>
+        <button class="large-button">Large Button</button><!-- Assume using Bootstrap's button classes -->
+      </div>
+      <div class="col-sm-7">
+        <img src="./images/index/arrival.png" alt="Michigan Law School" style="width: 475px;
+        height: 334px;
+        margin: 20px 0 4px 31px;">
+      </div>
+    </div>
   </div>
 
   
