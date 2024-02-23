@@ -444,13 +444,17 @@ a:hover::before {
   display:block;
   width: 100%;
   height: 75px;
-  padding: 26px 97px 27px 833px;
+  padding: 26px 0px 27px 60%;
   background-color: #f5f7fa;
+}
+
+.navbar-outer {
+  height: 60px;
 }
 
 .navbar-button {
   width: 134px;
-  height: 20px;
+  height: 50px;
   flex-grow: 0;
   font-family: Inter;
   font-weight: bold;
@@ -470,7 +474,7 @@ a:hover::before {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-.navbar-button:hover + .navbar-content {
+.navbar-button:onclick + .navbar-content {
   display: block;
 }
 

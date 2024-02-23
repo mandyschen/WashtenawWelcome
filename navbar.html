@@ -16,11 +16,11 @@
     <body style = "padding: 0% 0%;">
         <header>
           <div class="navbar-kernal">
-            <span>
-              <a class= "navbar-button" href = "transportation.html">
+            <span class="navbar-outer">
+              <a class= "navbar-button" href="javascript:void(0);" onclick="toggleContent('navbar-content-1')">
                 Transportation
               </a>
-              <div class="navbar-content">
+              <div class="navbar-content" id="navbar-content-1">
                 <a href="#">Around Campus</a>
                 <a href="#">Around Ann Arbor</a>
                 <a href="#">Beyond Ann Arbor</a>
@@ -28,21 +28,31 @@
               </div>
             </span>
             <span>
-              <a class= "navbar-button" href = "groceries.html">
+              <a class= "navbar-button">
                 Groceries
               </a>
             </span>
             <span>
-              <a class= "navbar-button" href = "connect.html">
+              <a class= "navbar-button">
                 Social
               </a>
             </span>
             <span>
-              <a class= "navbar-button" href = "about.html">
+              <a class= "navbar-button">
                 About
               </a>
             </span>
           </div>
         </header>
+        <script>
+          function toggleContent(contentId) {
+              var content = document.getElementById(contentId);
+              if (content.style.display === "block") {
+                  content.style.display = "none";
+              } else {
+                  content.style.display = "block";
+              }
+          }
+      </script>
     </body>
 </html>
