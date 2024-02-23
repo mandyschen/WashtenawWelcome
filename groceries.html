@@ -32,78 +32,106 @@
             <input type="radio" id="x2" name="x" onclick="show('closestToCampus')"/>
             <label for="x2" class="rounded-pill selected" >Closest to Campus</label>
             
-            <input type="radio" id="x3" name="x"/>
+            <input type="radio" id="x3" name="x" onclick="show('cheapest')"/>
             <label for="x3" class="rounded-pill selected">Cheapest</label>
             
-            <input type="radio" id="x4" name="x"/>
+            <input type="radio" id="x4" name="x" onclick="show('international')"/>
             <label for="x4" class="rounded-pill selected">International</label>
 
-            <input type="radio" id="x5" name="x"/>
+            <input type="radio" id="x5" name="x" onclick="show('bulk')"/>
             <label for="x5" class="rounded-pill selected">Bulk</label>
         </nav>
 
-        <div id="groceryStores"> 
+        <div id="groceryStores" class="row"> 
+                <div class="col-md-3">
+                    <!-- <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img> -->
+                    <input type="image" style="width:100%" src="./images/groceries/default-image.png" name="x2" class="btTxt submit" id="mostPopularPopup" />
+                    <div style="display: flex; justify-content: space-between;">
+                        <p style="font-weight: bold">Meijer</p>
+                        <p style="font-weight: bold">$$</p>
+                    </div>
+                    <p style="line-height: 0;">&starf; &starf; &starf; &star; &star;</p>
+                </div>
+                <div class="col-md-3">
+                    <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
+                </div>
+                <div class="col-md-3">
+                    <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
+                </div>
+                <div class="col-md-3">
+                    <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
+                </div>
+            </div>
 
-        <!-- Most Popular -->
+        <div hidden>
 
-        <div id="mostPopular" class="row">
-            <div class="col-md-3">
-                <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
-                <p>Meijer</p>
-                <p2>Description</p2>
-                <br>
-                <p2>$$</p2>
+            <!-- Most Popular -->
+            <div id="mostPopular" class="row">
+                <div class="col-md-3">
+                    <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>Meijer</p>
+                        <p>$$</p>
+                      </div>
+                    <p2>Description</p2>
+                </div>
+                <div class="col-md-3">
+                    <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
+                </div>
+                <div class="col-md-3">
+                    <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
+                </div>
+                <div class="col-md-3">
+                    <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
+                </div>
             </div>
-            <div class="col-md-3">
-                <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
-            </div>
-            <div class="col-md-3">
-                <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
-            </div>
-            <div class="col-md-3">
-                <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
-            </div>
-        </div>
-    </div>
-
         
-        <!-- Closest to Campus-->
-        <div id="closestToCampus" class="row" style="display:none">
-            <div class="col-md-3">
-                <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
-                <p>Target</p>
-                <p2>Description</p2>
-                <br>
-                <p2>$$</p2>
+            <!-- Closest to Campus-->
+            <div id="closestToCampus" class="row" style="display:none">
+                <div class="col-md-3">
+                    <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
+                    <p>Target</p>
+                    <p2>Description</p2>
+                    <br>
+                    <p2>$$</p2>
+                </div>
+                <div class="col-md-3">
+                    <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
+                </div>
+                <div class="col-md-3">
+                    <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
+                </div>
+                <div class="col-md-3">
+                    <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
+                </div>
             </div>
-            <div class="col-md-3">
-                <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
+
+            <!-- Cheapest -->
+            <div>
+
             </div>
-            <div class="col-md-3">
-                <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
+
+            <!-- International -->
+            <div>
+
             </div>
-            <div class="col-md-3">
-                <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
+            
+            <!-- Bulk -->
+            <div>
+
             </div>
-        </div>
-        <!-- Cheapest -->
-        <div>
 
         </div>
-        <!-- International -->
-        <div>
-
-        </div>
-        <!-- Bulk -->
-        <div>
-
-        </div>
-
+        
    
 
     <script>
         function show(param_div_id) {
             document.getElementById('groceryStores').innerHTML = document.getElementById(param_div_id).innerHTML;
+        }
+        function popup() {
+            var popup = document.getElementById("mostPopularPopup");
+            popup.classList.toggle("show"); // https://www.w3schools.com/howto/howto_js_popup.asp
         }
     </script>
 
