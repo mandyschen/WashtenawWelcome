@@ -32,79 +32,167 @@
             <input type="radio" id="x2" name="x" onclick="show('closestToCampus')"/>
             <label for="x2" class="rounded-pill selected" >Closest to Campus</label>
             
-            <input type="radio" id="x3" name="x"/>
+            <input type="radio" id="x3" name="x" onclick="show('cheapest')"/>
             <label for="x3" class="rounded-pill selected">Cheapest</label>
             
-            <input type="radio" id="x4" name="x"/>
+            <input type="radio" id="x4" name="x" onclick="show('international')"/>
             <label for="x4" class="rounded-pill selected">International</label>
 
-            <input type="radio" id="x5" name="x"/>
+            <input type="radio" id="x5" name="x" onclick="show('bulk')"/>
             <label for="x5" class="rounded-pill selected">Bulk</label>
         </nav>
 
-        <div id="groceryStores"> 
+        <!-- Popups -->
 
-        <!-- Most Popular -->
-
-        <div id="mostPopular" class="row">
-            <div class="col-md-3">
-                <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
-                <p>Meijer</p>
-                <p2>Description</p2>
-                <br>
-                <p2>$$</p2>
-            </div>
-            <div class="col-md-3">
-                <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
-            </div>
-            <div class="col-md-3">
-                <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
-            </div>
-            <div class="col-md-3">
-                <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
-            </div>
-        </div>
-    </div>
-
-        
-        <!-- Closest to Campus-->
-        <div id="closestToCampus" class="row" style="display:none">
-            <div class="col-md-3">
-                <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
-                <p>Target</p>
-                <p2>Description</p2>
-                <br>
-                <p2>$$</p2>
-            </div>
-            <div class="col-md-3">
-                <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
-            </div>
-            <div class="col-md-3">
-                <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
-            </div>
-            <div class="col-md-3">
-                <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
-            </div>
-        </div>
-        <!-- Cheapest -->
-        <div>
-
-        </div>
-        <!-- International -->
-        <div>
-
-        </div>
-        <!-- Bulk -->
-        <div>
-
-        </div>
-
+        <div id="dimmer">
+            <div class="groceryPopup" id="mostPopularWindow">
+                <button id="closeButton">&times</button>
+                <h1>Meijer ($$)</h1>
+                <div class="row" style="padding: 15px;"> 
+                    <div class="col-md-5">
+                        <img src="./images/groceries/default-image.png" alt="default-image"></img>
+                    </div>
+                    <div class="col-md-7">
+                        <h2>Overview</h2>
+                        <p>Text text text</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>Pros</h3>
+                            </div>
+                            <div class="col-md-6">
+                                <h3>Cons</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="padding: 15px;">
+                    <div class="col-md-5">
+                        <img src="./images/groceries/default-image.png" alt="default-image"></img>
+                        <a href="./transportation/schedule/bursleyBaitsSched.png">
+                            <p style="color:gray">Find nearby store on Google Maps.</p>
+                        </a>
+                    </div>
+                    <div class="col-md-7">
+                        <h2>Transportation</h2>
+                        <p>Text text text</p>
+                    </div>
+                </div>
    
+            </div>   
+        </div>
+
+        <!-- Images -->
+
+        <div id="groceryStores" class="row"> 
+                <div class="col-md-3">
+                    <input type="image" style="width:100%" src="./images/groceries/default-image.png" name="x2" class="btTxt submit" id="mostPopularPopup" />
+                    <div style="display: flex; justify-content: space-between;">
+                        <p style="font-weight: bold">Meijer</p>
+                        <p style="font-weight: bold">$$</p>
+                    </div>
+                    <p style="line-height: 0;">&starf; &starf; &starf; &star; &star;</p>
+                </div>
+                <div class="col-md-3">
+                    <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
+                </div>
+                <div class="col-md-3">
+                    <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
+                </div>
+                <div class="col-md-3">
+                    <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
+                </div>
+        </div>
+
+        <div hidden>
+
+            <!-- Most Popular -->
+            <div id="mostPopular" class="row">
+                <div class="col-md-3">
+                    <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>Meijer</p>
+                        <p>$$</p>
+                      </div>
+                    <p2>Description</p2>
+                </div>
+                <div class="col-md-3">
+                    <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
+                </div>
+                <div class="col-md-3">
+                    <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
+                </div>
+                <div class="col-md-3">
+                    <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
+                </div>
+            </div>
+        
+            <!-- Closest to Campus-->
+            <div id="closestToCampus" class="row" style="display:none">
+                <div class="col-md-3">
+                    <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
+                    <p>Target</p>
+                    <p2>Description</p2>
+                    <br>
+                    <p2>$$</p2>
+                </div>
+                <div class="col-md-3">
+                    <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
+                </div>
+                <div class="col-md-3">
+                    <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
+                </div>
+                <div class="col-md-3">
+                    <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
+                </div>
+            </div>
+
+            <!-- Cheapest -->
+            <div>
+
+            </div>
+
+            <!-- International -->
+            <div>
+
+            </div>
+            
+            <!-- Bulk -->
+            <div>
+
+            </div>
+
+        </div>
 
     <script>
+        var popupLink = document.getElementById("mostPopularPopup");
+        var popupWindow = document.getElementById("mostPopularWindow");
+        var closeButton = document.getElementById("closeButton");
+
+        popupLink.addEventListener("click", function(event) {
+            event.preventDefault();
+            popupWindow.style.display = "block";
+        });
+
+        closeButton.addEventListener("click", function() {
+            popupWindow.style.display = "none";
+        });
+
+        $(function() {
+            var dimmerButton = $('.mostPopularPopup');
+            var dimmer = $('.dimmer');
+            var exit = $('.closeButton');
+            dimmerButton.on('click', function() {
+                dimmer.show();
+            });
+            exit.on('click', function() {
+                dimmer.hide();
+            });
+        });
+
         function show(param_div_id) {
             document.getElementById('groceryStores').innerHTML = document.getElementById(param_div_id).innerHTML;
         }
+
     </script>
 
         <br>
