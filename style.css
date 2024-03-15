@@ -472,6 +472,7 @@ a:hover::before {
   position:absolute;
   background-color: white; /* Adjust as needed */
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  margin-top: 25px;
 }
 
 .navbar-button:onclick + .navbar-content {
@@ -482,7 +483,7 @@ a:hover::before {
   display: block;
   padding: 12px;
   text-decoration: none;
-  color: black; /* Adjust as needed */
+  color: #2b6c7a; /* Adjust as needed */
 }
 
 .navbar-content a:hover {
@@ -490,3 +491,17 @@ a:hover::before {
 }
 
 .show {display: block;}
+
+.fa-bars {
+  display: none; /* Initially hide the hamburger logo */
+}
+
+@media screen and (max-width: 1115px) {
+    .navbar-button {
+      display: none;
+    }
+
+    .navbar-button-hamburger {
+      display: block;
+    }
+}
