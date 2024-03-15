@@ -44,9 +44,8 @@
 
         <!-- Popups -->
 
-        <div id="dimmer">
-            <div class="groceryPopup" id="mostPopularWindow">
-                <button id="closeButton">&times</button>
+            <div class="groceryPopup" id="meijerPopup">
+                <button id="closeButton" onclick="closePopup()">&times</button>
                 <h1>Meijer ($$)</h1>
                 <div class="row" style="padding: 15px;"> 
                     <div class="col-md-5">
@@ -78,14 +77,49 @@
                     </div>
                 </div>
    
-            </div>   
-        </div>
+            </div>    
 
-        <!-- Images -->
+            <div class="groceryPopup" id="targetPopup">
+                <button id="closeButton" onclick="closePopup()">&times</button>
+                <h1>Target ($$)</h1>
+                <div class="row" style="padding: 15px;"> 
+                    <div class="col-md-5">
+                        <img src="./images/groceries/default-image.png" alt="default-image"></img>
+                    </div>
+                    <div class="col-md-7">
+                        <h2>Overview</h2>
+                        <p>Text text text</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>Pros</h3>
+                            </div>
+                            <div class="col-md-6">
+                                <h3>Cons</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="padding: 15px;">
+                    <div class="col-md-5">
+                        <img src="./images/groceries/default-image.png" alt="default-image"></img>
+                        <a href="./transportation/schedule/bursleyBaitsSched.png">
+                            <p style="color:gray">Find nearby store on Google Maps.</p>
+                        </a>
+                    </div>
+                    <div class="col-md-7">
+                        <h2>Transportation</h2>
+                        <p>Text text text</p>
+                    </div>
+                </div>
+   
+            </div>   
+        
+
+        <!-- Stores -->
 
         <div id="groceryStores" class="row"> 
                 <div class="col-md-3">
-                    <input type="image" style="width:100%" src="./images/groceries/default-image.png" name="x2" class="btTxt submit" id="mostPopularPopup" />
+                    <input type="image" style="width:100%" src="./images/groceries/default-image.png" name="x2" class="btTxt submit" id="meijer" onclick="openPopup('meijer')" />
                     <div style="display: flex; justify-content: space-between;">
                         <p style="font-weight: bold">Meijer</p>
                         <p style="font-weight: bold">$$</p>
@@ -108,12 +142,12 @@
             <!-- Most Popular -->
             <div id="mostPopular" class="row">
                 <div class="col-md-3">
-                    <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
+                    <input type="image" style="width:100%" src="./images/groceries/default-image.png" name="x2" class="btTxt submit" id="meijer" onclick="openPopup('meijer')" />
                     <div style="display: flex; justify-content: space-between;">
-                        <p>Meijer</p>
-                        <p>$$</p>
-                      </div>
-                    <p2>Description</p2>
+                        <p style="font-weight: bold">Meijer</p>
+                        <p style="font-weight: bold">$$</p>
+                    </div>
+                    <p style="line-height: 0;">&starf; &starf; &starf; &star; &star;</p>
                 </div>
                 <div class="col-md-3">
                     <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
@@ -129,11 +163,12 @@
             <!-- Closest to Campus-->
             <div id="closestToCampus" class="row" style="display:none">
                 <div class="col-md-3">
-                    <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
-                    <p>Target</p>
-                    <p2>Description</p2>
-                    <br>
-                    <p2>$$</p2>
+                    <input type="image" style="width:100%" src="./images/groceries/default-image.png" name="x2" class="btTxt submit" id="target" onclick="openPopup('target')"/>
+                    <div style="display: flex; justify-content: space-between;">
+                        <p style="font-weight: bold">Target</p>
+                        <p style="font-weight: bold">$$</p>
+                    </div>
+                    <p style="line-height: 0;">&starf; &starf; &starf; &star; &star;</p>
                 </div>
                 <div class="col-md-3">
                     <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
@@ -164,30 +199,16 @@
         </div>
 
     <script>
-        var popupLink = document.getElementById("mostPopularPopup");
-        var popupWindow = document.getElementById("mostPopularWindow");
-        var closeButton = document.getElementById("closeButton");
+        var popupWindow;
 
-        popupLink.addEventListener("click", function(event) {
-            event.preventDefault();
+        function openPopup(param_div_id) {
+            popupWindow = document.getElementById(param_div_id + "Popup");
             popupWindow.style.display = "block";
-        });
+        }
 
-        closeButton.addEventListener("click", function() {
+        function closePopup(param_div_id) {
             popupWindow.style.display = "none";
-        });
-
-        $(function() {
-            var dimmerButton = $('.mostPopularPopup');
-            var dimmer = $('.dimmer');
-            var exit = $('.closeButton');
-            dimmerButton.on('click', function() {
-                dimmer.show();
-            });
-            exit.on('click', function() {
-                dimmer.hide();
-            });
-        });
+        }
 
         function show(param_div_id) {
             document.getElementById('groceryStores').innerHTML = document.getElementById(param_div_id).innerHTML;
