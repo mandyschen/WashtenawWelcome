@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: #fff8e8;
   height: 100%;
   padding: 0% 10%;
 }
@@ -357,6 +357,8 @@ padding: 10%;
 text-shadow: 2px 2px 5px black;
 }
 
+
+
 section { 
 width: 100%;
 margin: auto; 
@@ -546,5 +548,5 @@ background-color: white;
   letter-spacing: normal;
   text-align: center;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #afd9ff;
 }
