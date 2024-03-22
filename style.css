@@ -1,5 +1,5 @@
 body {
-  background-color: #fff8e8;
+  background-color: #fffcf5;
   height: 100%;
   padding: 0% 10%;
 }
@@ -484,7 +484,7 @@ background-color: white;
 }
 
 .medium-button {
-  width: 176px;
+  width: 300px;
   height: 40px;
   border-radius: 30px;
   font-size: 18px;
