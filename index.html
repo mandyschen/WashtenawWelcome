@@ -15,8 +15,34 @@
 </head>
 <body>
 
-  <header-component></header-component>
-
+  <header>
+    <div class="navbar-kernal">
+      <div class="navbar-logo">
+        <img id="ArborAdvisor" src="./images/ArborAdvisorLogo.png" alt="ALT TEXT" style="width: 170px;">
+      </div>
+      <span class="navbar-outer">
+        <a class= "navbar-button" href="transportation.html" onclick="toggleContent('navbar-content-1')">
+          Transportation
+        </a>  
+      </span>
+      <span class="navbar-outer">
+        <a class= "navbar-button" href="groceries.html">
+          Groceries
+        </a>
+      </span class="navbar-outer">
+      <span class="navbar-outer">
+        <a class= "navbar-button" href="about.html">
+          About
+        </a>
+      </span>
+      <span class="navbar-outer">
+        <a class= "navbar-button-hamburger">
+          <i class="fa fa-bars"></i>
+        </a>
+      </span>
+    </div>
+  </header>
+  <main>
   <!-- <div style="background: linear-gradient(rgba(255, 255, 255, 0.677), rgba(165, 165, 165, 0.5)), 
               url(./images/about/umich_law_school.jpeg);width: 1280px;
   height: 357px; padding: 112px 296px 90px 128px;"> -->
@@ -97,10 +123,20 @@
       <button class="medium-button" onclick="location.href='https://internationalcenter.umich.edu/'">Learn more</button>
   </div>
 </div>
+</main>
   
 
   <footer-component></footer-component>
-
+  <script>
+    function toggleContent(contentId) {
+        var content = document.getElementById(contentId);
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    }
+  </script>
 </body>
 </html>
 

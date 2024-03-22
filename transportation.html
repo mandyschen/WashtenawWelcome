@@ -19,8 +19,34 @@
       </head>
     <body>
 
-        <header-component></header-component>
-
+        <header>
+            <div class="navbar-kernal">
+              <div class="navbar-logo">
+                <img id="ArborAdvisor" src="./images/ArborAdvisorLogo.png" alt="ALT TEXT" style="width: 170px;">
+              </div>
+              <span class="navbar-outer">
+                <a class= "navbar-button" href="transportation.html" onclick="toggleContent('navbar-content-1')">
+                  Transportation
+                </a>  
+              </span>
+              <span class="navbar-outer">
+                <a class= "navbar-button" href="groceries.html">
+                  Groceries
+                </a>
+              </span class="navbar-outer">
+              <span class="navbar-outer">
+                <a class= "navbar-button" href="about.html">
+                  About
+                </a>
+              </span>
+              <span class="navbar-outer">
+                <a class= "navbar-button-hamburger">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </span>
+            </div>
+          </header>
+        <main>
         <div class="row" style="padding-top:90px;">
             <div class="col-sm" >
               <h1 style="font-size: 50px; font-weight: bold;">Transportation</h1>
@@ -69,8 +95,19 @@
                 <div id="clear"></div>
             </div>
         </div>
+        </main>
 
         <footer-component></footer-component>
+        <script>
+            function toggleContent(contentId) {
+                var content = document.getElementById(contentId);
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            }
+          </script>
 
     </body>
 </html>

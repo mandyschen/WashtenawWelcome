@@ -15,7 +15,34 @@
     </head>
 
     <body>
-        <header-component></header-component>
+        <header>
+            <div class="navbar-kernal">
+              <div class="navbar-logo">
+                <img id="ArborAdvisor" src="./images/ArborAdvisorLogo.png" alt="ALT TEXT" style="width: 170px;">
+              </div>
+              <span class="navbar-outer">
+                <a class= "navbar-button" href="transportation.html" onclick="toggleContent('navbar-content-1')">
+                  Transportation
+                </a>  
+              </span>
+              <span class="navbar-outer">
+                <a class= "navbar-button" href="groceries.html">
+                  Groceries
+                </a>
+              </span class="navbar-outer">
+              <span class="navbar-outer">
+                <a class= "navbar-button" href="about.html">
+                  About
+                </a>
+              </span>
+              <span class="navbar-outer">
+                <a class= "navbar-button-hamburger">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </span>
+            </div>
+          </header>
+        <main>
         <h1>Grocery Shopping</h1>
         <h1>Grocery Shopping</h1>
         <h1>Grocery Shopping</h1>
@@ -319,9 +346,19 @@
             function show(param_div_id) {
                 document.getElementById('groceryStores').innerHTML = document.getElementById(param_div_id).innerHTML;
             }
+
+            function toggleContent(contentId) {
+                var content = document.getElementById(contentId);
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            }
     
         </script>
 
+        </main>
         <footer-component></footer-component>
 
     </body>
