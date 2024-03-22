@@ -401,15 +401,18 @@ transform: scaleX(1);
 .routes {
 border: none;
 color: black;
-width: 90%;
+width: 252px;
 padding: 20px;
+height: 69px;
 text-align: center;
-text-decoration: none;
+font-weight: bold;
 display: block;
 font-size: 20px;
+border-radius: 20px;
 /* margin: 4px 2px; */
+margin-bottom: 15px;
 cursor: pointer;
-background-color: white;
+background-color: #afd9ff;
 }
 
 .routes:hover {
@@ -497,3 +500,5 @@ background-color: white;
   color: #000000;
   background-color: #afd9ff;
 }
+
+
