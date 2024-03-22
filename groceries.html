@@ -26,7 +26,10 @@
         <h2>Grocery Stores</h2>
 
           <nav class="selection">
-            <input type="radio" id="x1" name="x" onclick="show('mostPopular')" checked/>
+            <input type="radio" id="x0" name="x" onclick="show('all')" checked/>
+            <label for="x0" class="rounded-pill selected">All</label>
+
+            <input type="radio" id="x1" name="x" onclick="show('mostPopular')"/>
             <label for="x1" class="rounded-pill selected">Most Popular</label>
             
             <input type="radio" id="x2" name="x" onclick="show('closestToCampus')"/>
@@ -67,7 +70,9 @@
                 <div class="row" style="padding: 15px;">
                     <div class="col-md-5">
                         <img src="./images/groceries/default-image.png" alt="default-image"></img>
-                        <a href="./transportation/schedule/bursleyBaitsSched.png">
+                        <a href="https://www.google.com/maps/dir//3145+Ann+Arbor-Saline+Rd,+Ann+Arbor,
+                        +MI+48103/@42.2395785,-83.8489458,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x883cb01f3ab022dd:
+                        0x16ea254a5f4cf74b!2m2!1d-83.766545!2d42.239608?entry=ttu" target="_blank">
                             <p style="color:gray">Find nearby store on Google Maps.</p>
                         </a>
                     </div>
@@ -102,7 +107,11 @@
                 <div class="row" style="padding: 15px;">
                     <div class="col-md-5">
                         <img src="./images/groceries/default-image.png" alt="default-image"></img>
-                        <a href="./transportation/schedule/bursleyBaitsSched.png">
+                        <a href="https://www.google.com/maps?s=web&lqi=ChB0YXJnZXQgYW5uIGFyYm9yIgOIAQFIxaOZ9IC1
+                        gIAIWiAQABgAGAEYAiIQdGFyZ2V0IGFubiBhcmJvcioECAIQAJIBEGRlcGFydG1lbnRfc3RvcmWqAUQQASoKIgZ0YXJ
+                        nZXQoADIeEAEiGlGxu-szEz3WJagLS2yrCJcy4h1Q7BPFvZn1MhQQAiIQdGFyZ2V0IGFubiBhcmJvcuABAA&vet=12ahU
+                        KEwiK8Z3p34iFAxWCv4kEHV-3CgwQ1YkKegQIIBAB..i&cs=0&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=KRcGYf
+                        tVrzyIMeNpUAnP8pe2&daddr=231+S+State+St,+Ann+Arbor,+MI+48104" target="_blank">
                             <p style="color:gray">Find nearby store on Google Maps.</p>
                         </a>
                     </div>
@@ -127,20 +136,72 @@
                     <p style="line-height: 0;">&starf; &starf; &starf; &star; &star;</p>
                 </div>
                 <div class="col-md-3">
-                    <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
+                    <input type="image" style="width:100%" src="./images/groceries/default-image.png" name="x2" class="btTxt submit" id="target" onclick="openPopup('target')" />
+                    <div style="display: flex; justify-content: space-between;">
+                        <p style="font-weight: bold">Target</p>
+                        <p style="font-weight: bold">$$</p>
+                    </div>
+                    <p style="line-height: 0;">&starf; &starf; &starf; &star; &star;</p>
                 </div>
                 <div class="col-md-3">
-                    <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
+                    <input type="image" style="width:100%" src="./images/groceries/default-image.png" name="x2" class="btTxt submit" id="traderjoes" onclick="openPopup('traderjoes')" />
+                    <div style="display: flex; justify-content: space-between;">
+                        <p style="font-weight: bold">Trader Joe's</p>
+                        <p style="font-weight: bold">$$$</p>
+                    </div>
+                    <p style="line-height: 0;">&starf; &starf; &starf; &star; &star;</p>
                 </div>
                 <div class="col-md-3">
-                    <img style="width:100%" src="./images/groceries/default-image.png" alt="default-image"></img>
+                        <input type="image" style="width:100%" src="./images/groceries/default-image.png" name="x2" class="btTxt submit" id="walmart" onclick="openPopup('walmart')" />
+                        <div style="display: flex; justify-content: space-between;">
+                            <p style="font-weight: bold">Walmart</p>
+                            <p style="font-weight: bold">$</p>
+                        </div>
+                        <p style="line-height: 0;">&starf; &starf; &starf; &star; &star;</p>
+                    </div>
                 </div>
         </div>
 
         <div hidden>
 
+            <!-- All -->
+            <div id="all" class="row"> 
+                <div class="col-md-3">
+                    <input type="image" style="width:100%" src="./images/groceries/default-image.png" name="x2" class="btTxt submit" id="meijer" onclick="openPopup('meijer')" />
+                    <div style="display: flex; justify-content: space-between;">
+                        <p style="font-weight: bold">Meijer</p>
+                        <p style="font-weight: bold">$$</p>
+                    </div>
+                    <p style="line-height: 0;">&starf; &starf; &starf; &star; &star;</p>
+                </div>
+                <div class="col-md-3">
+                    <input type="image" style="width:100%" src="./images/groceries/default-image.png" name="x2" class="btTxt submit" id="target" onclick="openPopup('target')" />
+                    <div style="display: flex; justify-content: space-between;">
+                        <p style="font-weight: bold">Target</p>
+                        <p style="font-weight: bold">$$</p>
+                    </div>
+                    <p style="line-height: 0;">&starf; &starf; &starf; &star; &star;</p>
+                </div>
+                <div class="col-md-3">
+                    <input type="image" style="width:100%" src="./images/groceries/default-image.png" name="x2" class="btTxt submit" id="traderjoes" onclick="openPopup('traderjoes')" />
+                    <div style="display: flex; justify-content: space-between;">
+                        <p style="font-weight: bold">Trader Joe's</p>
+                        <p style="font-weight: bold">$$$</p>
+                    </div>
+                    <p style="line-height: 0;">&starf; &starf; &starf; &star; &star;</p>
+                </div>
+                <div class="col-md-3">
+                        <input type="image" style="width:100%" src="./images/groceries/default-image.png" name="x2" class="btTxt submit" id="walmart" onclick="openPopup('walmart')" />
+                        <div style="display: flex; justify-content: space-between;">
+                            <p style="font-weight: bold">Walmart</p>
+                            <p style="font-weight: bold">$</p>
+                        </div>
+                        <p style="line-height: 0;">&starf; &starf; &starf; &star; &star;</p>
+                    </div>
+                </div>
+
             <!-- Most Popular -->
-            <div id="mostPopular" class="row">
+            <div id="mostPopular" class="row" style="display:none">
                 <div class="col-md-3">
                     <input type="image" style="width:100%" src="./images/groceries/default-image.png" name="x2" class="btTxt submit" id="meijer" onclick="openPopup('meijer')" />
                     <div style="display: flex; justify-content: space-between;">
@@ -186,10 +247,6 @@
 
             </div>
 
-            <!-- International -->
-            <div>
-
-            </div>
             
             <!-- Bulk -->
             <div>
@@ -198,23 +255,7 @@
 
         </div>
 
-    <script>
-        var popupWindow;
 
-        function openPopup(param_div_id) {
-            popupWindow = document.getElementById(param_div_id + "Popup");
-            popupWindow.style.display = "block";
-        }
-
-        function closePopup(param_div_id) {
-            popupWindow.style.display = "none";
-        }
-
-        function show(param_div_id) {
-            document.getElementById('groceryStores').innerHTML = document.getElementById(param_div_id).innerHTML;
-        }
-
-    </script>
 
         <br>
         <br>
@@ -252,6 +293,24 @@
         </div>
 
         <br>
+
+        <script>
+            var popupWindow;
+    
+            function openPopup(param_div_id) {
+                popupWindow = document.getElementById(param_div_id + "Popup");
+                popupWindow.style.display = "block";
+            }
+    
+            function closePopup(param_div_id) {
+                popupWindow.style.display = "none";
+            }
+    
+            function show(param_div_id) {
+                document.getElementById('groceryStores').innerHTML = document.getElementById(param_div_id).innerHTML;
+            }
+    
+        </script>
 
         <footer-component></footer-component>
 
