@@ -21,13 +21,13 @@
               url(./images/about/umich_law_school.jpeg);width: 1280px;
   height: 357px; padding: 112px 296px 90px 128px;"> -->
   <div class="row" style="padding-top:90px;">
-    <div class="col-sm">
-      <h1>Welcome to Arbor Advisor</h1>
-      <p>
+    <div class="col-sm" >
+      <h1 style="font-size: 50px; font-weight: bold;">Welcome to Arbor Advisor</h1>
+      <p style="padding-top: 30px;">
           A student's guide around UofM. Find out more about local transportation, nearby grocery stores, and fun events!
       </p>
     </div>
-    <div class="col-sm">
+    <div class="col-sm" style="text-align: right;">
       <img src="./images/about/homeicon.png" style="height: 226px; width: 365px;">
     </div>
 </div>
@@ -36,42 +36,53 @@
 
 <h1 style = "margin-top: 30px; margin-bottom: 30px;">What’s new on campus</h1>
 <div style="display: flex; align-items: flex-start;">
-  <div style="width: 700px; height: 400px; background-image: url('./images/index/brunch.png'); background-size: cover; margin-right: 10px;">
-    <div class="inner-box" style=" background-color: rgba(35, 42, 45, 0.75);">
-      <h2 style="color: hsl(0, 0%, 85%);">Restaurant week is here!</h2>
+  <!-- Left column -->
+  <div style="width: 700px; margin-right: 40px;">
+    <div style="position: relative; width: 100%; height: 400px; background-image: url('./images/index/brunch.png'); background-size: cover; border-radius: 5%;">
+      <div class="inner-box" style="position: absolute; left: 0; top: 0; width: 40%; height: 100%; background-color: rgba(35, 42, 45, 0.5); border-radius: 5%;">
+        <h2 style="color: hsl(0, 0%, 85%); padding: 20px;">Restaurant week is here!</h2>
+        <p style="color: hsl(0, 0%, 85%); position: absolute; bottom: 0; width: 100%; padding: 20px;">Jan 26, 2024</p>
+      </div>
     </div>
   </div>
-  <div style="display: flex; flex-direction: column; justify-content: space-between; margin-left: 35px;">
-      <div style="width: 500px; height: 119px; background-image: url('./images/index/kids.png'); background-size: cover; margin-bottom: 20px;">
-        <div class="inner-box" style="background-color: rgba(35, 42, 45, 0.75);">
-          <h2 style="color: #d9d9d9;">Restaurant week is here!</h2>
-        </div>
+
+  <!-- Right column -->
+  <div style="display: flex; flex-direction: column; justify-content: space-between;">
+    <div style="position: relative; width: 500px; height: 119px; background-image: url('./images/index/kids.png'); background-size: cover; margin-bottom: 20px; border-radius: 5%;">
+      <div class="inner-box" style="position: absolute; left: 0; top: 0; width: 40%; height: 100%; background-color: rgba(35, 42, 45, 0.5); border-radius: 5%;">
+        <h2 style="color: #d9d9d9; padding: 10px;">Photography Exhibit</h2>
+        <p style="color: hsl(0, 0%, 85%); position: absolute; bottom: 0; width: 100%; padding-left: 10px;">Jan 26, 2024</p>
       </div>
-      <div style="width: 500px; height: 119px; background-image: url('./images/index/soccer.png'); background-size: cover; margin-bottom: 20px;">
-        <div class="inner-box" style="background-color: rgba(35, 42, 45, 0.75);">
-          <h2 style="color: #d9d9d9;">Restaurant week is here!</h2>
-        </div>
+    </div>
+    <div style="position: relative; width: 500px; height: 119px; background-image: url('./images/index/soccer.png'); background-size: cover; margin-bottom: 20px; border-radius: 5%;">
+      <div class="inner-box" style="position: absolute; left: 0; top: 0; width: 40%; height: 100%; background-color: rgba(35, 42, 45, 0.5); border-radius: 5%;">
+        <h2 style="color: #d9d9d9; padding: 10px;">Counter Mapping</h2>
+        <p style="color: hsl(0, 0%, 85%); position: absolute; bottom: 0; width: 100%; padding-left: 10px;">Jan 26, 2024</p>
       </div>
-      <div style="width: 500px; height: 119px; background-image: url('./images/index/workshops.png'); background-size: cover;">
-        <div class="inner-box" style="background-color: rgba(35, 42, 45, 0.75);">
-          <h2 style="color: #d9d9d9;">Restaurant week is here!</h2>
-        </div>
+    </div>
+    <div style="position: relative; width: 500px; height: 119px; background-image: url('./images/index/workshops.png'); background-size: cover; border-radius: 5%;">
+      <div class="inner-box" style="position: absolute; left: 0; top: 0; width: 40%; height: 100%; background-color: rgba(35, 42, 45, 0.5); border-radius: 5%;">
+        <h2 style="color: #d9d9d9; padding: 10px;">Board Game Night</h2>
+        <p style="color: hsl(0, 0%, 85%); position: absolute; bottom: 0; width: 100%; padding-left: 10px;">Jan 26, 2024</p>
       </div>
+    </div>
   </div>
 </div>
+
+
 
 
 <h1 style = "margin-top: 80px;">What can you find on Washtenaw?</h1>
 
 <div class="row" style="padding-bottom: 50px;">
   <div class="col-sm">
-    <img src="./images/about/umich_law_school.jpeg" alt="Michigan Law School" style="width: 100%; height: auto; margin: 35px 0px 57px 0px;">
+    <img src="./images/about/umich_law_school.jpeg" alt="Michigan Law School" style="width: 100%; height: auto; margin: 35px 0px 57px 0px; border-radius: 5%;">
     <h2> Transportation</h2>
       <p>Comprehensive campus navigation guidance.</p>
       <button class="medium-button" onclick="location.href='Transportation.html'">Learn more</button>
   </div>
   <div class="col-sm">
-    <img src="./images/about/umich_law_school.jpeg" alt="Michigan Law School" style="width: 100%; height: auto; margin: 35px 0px 57px 0px;">
+    <img src="./images/about/umich_law_school.jpeg" alt="Michigan Law School" style="width: 100%; height: auto; margin: 35px 0px 57px 0px; border-radius: 5%;">
     <h2> Grocery</h2>
         <p>
             Guide to campus-area grocery shopping options.
@@ -80,7 +91,7 @@
         <button class="medium-button" onclick="location.href='groceries.html'">Learn more</button>
   </div>
   <div class="col-sm">
-    <img src="./images/about/umich_law_school.jpeg" alt="Michigan Law School" style="width: 100%; height: auto; margin: 35px 0px 57px 0px;">
+    <img src="./images/about/umich_law_school.jpeg" alt="Michigan Law School" style="width: 100%; height: auto; margin: 35px 0px 57px 0px; border-radius: 5%;">
     <h2> Umich International Center</h2>
       <p>Guide to campus-area grocery shopping options.</p>
       <button class="medium-button" onclick="location.href='https://internationalcenter.umich.edu/'">Learn more</button>
