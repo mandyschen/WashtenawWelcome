@@ -13,80 +13,94 @@
   <link rel="stylesheet" href="style.css">
   <script src="connected.js" type="text/javascript" defer></script>
 </head>
-<body class = "indexpage">
+<body>
 
   <header-component></header-component>
 
-  <div style="background: linear-gradient(rgba(255, 255, 255, 0.677), rgba(165, 165, 165, 0.5)), 
-              url(./images/about/umich_law_school.jpeg); background-size: cover;
-              width: 1280px;
-              height: 357px;
-              margin: 1px 0 33px;
-              padding: 112px 296px 90px 128px;">
-    <h1 style="text-align: center;">Welcome to Arbor Advisor</h1>
-    <p style="text-align: center;">
-      Here’s some brief intro on the article<br>
-      Here’s some brief intro on the article 
-      Here’s some brief intro on the article<br> 
-      Here’s some brief intro on the article <br>
-      Here’s some brief 
-    </p>
+  <!-- <div style="background: linear-gradient(rgba(255, 255, 255, 0.677), rgba(165, 165, 165, 0.5)), 
+              url(./images/about/umich_law_school.jpeg);width: 1280px;
+  height: 357px; padding: 112px 296px 90px 128px;"> -->
+  <div class="row" style="padding-top:90px;">
+    <div class="col-sm" >
+      <h1 style="font-size: 50px; font-weight: bold;">Welcome to Arbor Advisor</h1>
+      <p style="padding-top: 30px;">
+          A student's guide around UofM. Find out more about local transportation, nearby grocery stores, and fun events!
+      </p>
+    </div>
+    <div class="col-sm" style="text-align: right;">
+      <img src="./images/about/homeicon.png" style="height: 226px; width: 365px;">
+    </div>
 </div>
 
   
 
-<h1 style="margin: 33px 216.4px 29px 128px;">What’s new on campus</h1>
-<div style="display: flex; align-items: flex-start; width: 900px; margin: 29px 51px 74px 120px; background-color: #d9d9d9;">
-    <div style="width: 636px; height: 400px; background: url('./images/about/umich_law_school.jpeg'); background-size: cover;"></div>
-    <div style="display: flex; flex-direction: column; justify-content: space-between; margin: 29px 51px 74px 120px;">
-        <div style="width: 353px; height: 119px; background: url('./images/about/umich_law_school.jpeg'); margin: 34px 120px 18px 0;"></div>
-        <div style="width: 353px; height: 119px; background: url('./images/about/umich_law_school.jpeg'); margin: 18px 120px 20px 0;"></div>
-        <div style="width: 353px; height: 119px; background: url('./images/about/umich_law_school.jpeg'); margin: 19px 120px 74px 0"></div>
+<h1 style = "margin-top: 30px; margin-bottom: 30px;">What’s new on campus</h1>
+<div style="display: flex; align-items: flex-start;">
+  <!-- Left column -->
+  <div style="width: 700px; margin-right: 40px;">
+    <div style="position: relative; width: 100%; height: 400px; background-image: url('./images/index/brunch.png'); background-size: cover; border-radius: 5%;">
+      <div class="inner-box" style="position: absolute; left: 0; top: 0; width: 40%; height: 100%; background-color: rgba(35, 42, 45, 0.5); border-radius: 5%;">
+        <h2 style="color: hsl(0, 0%, 85%); padding: 20px;">Restaurant week is here!</h2>
+        <p style="color: hsl(0, 0%, 85%); position: absolute; bottom: 0; width: 100%; padding: 20px;">Jan 26, 2024</p>
+      </div>
     </div>
+  </div>
+
+  <!-- Right column -->
+  <div style="display: flex; flex-direction: column; justify-content: space-between;">
+    <div style="position: relative; width: 500px; height: 119px; background-image: url('./images/index/kids.png'); background-size: cover; margin-bottom: 20px; border-radius: 5%;">
+      <div class="inner-box" style="position: absolute; left: 0; top: 0; width: 40%; height: 100%; background-color: rgba(35, 42, 45, 0.5); border-radius: 5%;">
+        <h2 style="color: #d9d9d9; padding: 10px;">Photography Exhibit</h2>
+        <p style="color: hsl(0, 0%, 85%); position: absolute; bottom: 0; width: 100%; padding-left: 10px;">Jan 26, 2024</p>
+      </div>
+    </div>
+    <div style="position: relative; width: 500px; height: 119px; background-image: url('./images/index/soccer.png'); background-size: cover; margin-bottom: 20px; border-radius: 5%;">
+      <div class="inner-box" style="position: absolute; left: 0; top: 0; width: 40%; height: 100%; background-color: rgba(35, 42, 45, 0.5); border-radius: 5%;">
+        <h2 style="color: #d9d9d9; padding: 10px;">Counter Mapping</h2>
+        <p style="color: hsl(0, 0%, 85%); position: absolute; bottom: 0; width: 100%; padding-left: 10px;">Jan 26, 2024</p>
+      </div>
+    </div>
+    <div style="position: relative; width: 500px; height: 119px; background-image: url('./images/index/workshops.png'); background-size: cover; border-radius: 5%;">
+      <div class="inner-box" style="position: absolute; left: 0; top: 0; width: 40%; height: 100%; background-color: rgba(35, 42, 45, 0.5); border-radius: 5%;">
+        <h2 style="color: #d9d9d9; padding: 10px;">Board Game Night</h2>
+        <p style="color: hsl(0, 0%, 85%); position: absolute; bottom: 0; width: 100%; padding-left: 10px;">Jan 26, 2024</p>
+      </div>
+    </div>
+  </div>
 </div>
 
 
-  <h1 style = "margin: 33px 216.4px 29px 128px;">What can you find on Washtenaw?</h1>
-  <div style="width: 500px; margin: 35px 79px 57px 128px; background-color: #d9d9d9; overflow: hidden;">
-    <img src="./images/about/umich_law_school.jpeg" alt="ALT TEXT" style="max-width: 50%; float: left; margin-right: 20px;">
-    <div style="overflow: hidden;">
-        <p style="text-align:left">
-            Here’s some brief intro on the article Here’s some brief intro on the article <br>
-            Here’s some brief intro on the article Here’s some brief intro on the article <br>
-            Here’s some brief asdasdsajdasjdasjdaksdasjkdasjdasjdkasdjasdkasjdaskdsjdkasjdas<br>
-            jkdasjdaskdjaskdjaskdasjdaskdjaskdjsadkasjdkasdjaskasjdjaskasjdjask.<br>
-            <button>Button</button>
+
+
+<h1 style = "margin-top: 80px;">What can you find on Washtenaw?</h1>
+
+<div class="row" style="padding-bottom: 50px;">
+  <div class="col-sm">
+    <img src="./images/about/umich_law_school.jpeg" alt="Michigan Law School" style="width: 100%; height: auto; margin: 35px 0px 57px 0px; border-radius: 5%;">
+    <h2> Transportation</h2>
+      <p>Comprehensive campus navigation guidance.</p>
+      <button class="medium-button" onclick="location.href='Transportation.html'">Learn more</button>
+  </div>
+  <div class="col-sm">
+    <img src="./images/about/umich_law_school.jpeg" alt="Michigan Law School" style="width: 100%; height: auto; margin: 35px 0px 57px 0px; border-radius: 5%;">
+    <h2> Grocery</h2>
+        <p>
+            Guide to campus-area grocery shopping options.
+            
         </p>
-    </div>
+        <button class="medium-button" onclick="location.href='groceries.html'">Learn more</button>
   </div>
-
-  <div style="width: 500px; margin: 35px 79px 57px 128px; background-color: #d9d9d9;">
-    <img src="./images/about/umich_law_school.jpeg" alt="ALT TEXT" style="max-width: 50%; float: left; margin-right: 20px;">
-    <div style="width: 593px;height: 110px; margin: 35px 126px 35px 80px;">
-        <p style="text-align:left">
-            Here’s some brief intro on the article Here’s some brief intro on the article <br>
-            Here’s some brief intro on the article Here’s some brief intro on the article <br>
-            Here’s some brief asdasdsajdasjdasjdaksdasjkdasjdasjdkasdjasdkasjdaskdsjdkasjdas<br>
-            jkdasjdaskdjaskdjaskdasjdaskdjaskdjsadkasjdkasdjaskasjdjaskasjdjask.<br>
-          <button>Button</button>
-        </p>
-    </div>
+  <div class="col-sm">
+    <img src="./images/about/umich_law_school.jpeg" alt="Michigan Law School" style="width: 100%; height: auto; margin: 35px 0px 57px 0px; border-radius: 5%;">
+    <h2> Umich International Center</h2>
+      <p>Guide to campus-area grocery shopping options.</p>
+      <button class="medium-button" onclick="location.href='https://internationalcenter.umich.edu/'">Learn more</button>
   </div>
-
-  
-
-  <div class="Rectangle-86;">
-    <h2>Fresh off the plane: Journey in US</h2>
-    <p>Here’s some brief intro on the article 
-      Here’s some brief intro on the article 
-      Here’s some brief intro on the article 
-      Here’s some brief intro on the article 
-      Here’s some brief</p>
-  </div>
-
+</div>
   
 
   <footer-component></footer-component>
 
 </body>
 </html>
+
